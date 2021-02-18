@@ -115,7 +115,6 @@ body {
 
 /*bouton explorez*/
 .btn_explorez {
-  border: transparent solid 1px;
   border-radius: 20px;
   font-weight: bold;
   text-align: center;
@@ -126,13 +125,8 @@ body {
   -webkit-box-shadow: 5px 10px 7px #e2e2e2;
           box-shadow: 5px 10px 7px #e2e2e2;
   font-size: 20px;
-}
-
-.linear-gradient {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
-  border-radius: 20px;
-  width: 300px;
 }
 
 /* vue mobile map*/
@@ -141,12 +135,6 @@ body {
     font-size: 12px;
     padding: 10px 0px 10px 0px;
     height: 15px;
-    width: 150px;
-  }
-  .linear-gradient {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background: linear-gradient(#ff79da, #9356dc);
-    border-radius: 20px;
     width: 150px;
   }
 }
