@@ -111,6 +111,10 @@ body {
   box-shadow: 5px 10px 7px #e2e2e2;
   font-size: $font_size_text_desktop;
   background: linear-gradient(#ff79da, #9356dc);
+  line-height: 20px;
+  &:hover{
+    background: linear-gradient(#9356dc, #ff79da);     
+  }
 }
 
 /* vue mobile map*/
