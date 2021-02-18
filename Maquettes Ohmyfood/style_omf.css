@@ -2,10 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* decription des variabbles*/
-body {
-  font-family: roboto, Arial, "sans-sherif";
-}
-
 /*---------------------------------------------------------------------------------------------------------*/
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------  -----  ---------------------------------------------------------------*/
@@ -76,6 +72,13 @@ body {
 .explorez {
   background-color: #f6f5f5;
   padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .explorez h1 {
@@ -91,5 +94,24 @@ body {
   .explorez h1, .decouvre {
     text-align: center;
   }
+}
+
+/*bouton explorez*/
+.btn_explorez {
+  border: transparent solid 1px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  height: 70%;
+  color: #fff;
+  -webkit-box-shadow: 5px 10px 7px #e2e2e2;
+          box-shadow: 5px 10px 7px #e2e2e2;
+}
+
+.linear-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style_omf.css.map */

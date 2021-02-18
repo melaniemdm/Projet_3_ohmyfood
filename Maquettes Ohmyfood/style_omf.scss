@@ -10,9 +10,7 @@ $omf_font_default:Arial, "sans-sherif";
 $omf_font_size_text: 12px;
 $padding: 10px;
 
-body {
-    font-family:$omf_text_font, $omf_font_default ;
-}
+
 
 /*---------------------------------------------------------------------------------------------------------*/
 /*---------------------------------  -----  ---------------------------------------------------------------*/
@@ -73,6 +71,8 @@ width: 20%;
  .explorez{
      background-color: rgb(246, 245, 245);
      padding: 40px;
+     display: flex;
+     flex-direction: column;
  }  
  .explorez h1{
         font-family: $omf_title_font;
@@ -87,4 +87,19 @@ width: 20%;
     }
        }
 
-       
+ /*bouton explorez*/
+ .btn_explorez{
+    border: transparent solid 1px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    height: 70%;
+    color: #fff;
+    box-shadow: 5px 10px 7px #e2e2e2;
+}  
+.linear-gradient {
+    background: linear-gradient(#ff79da, #9356dc);
+    border-radius: 20px;
+  }
+  
