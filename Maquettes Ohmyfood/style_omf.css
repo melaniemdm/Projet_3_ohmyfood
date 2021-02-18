@@ -1,1 +1,95 @@
-/* No CSS *//*# sourceMappingURL=style_omf.css.map */
+/* importantion des polices*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* decription des variabbles*/
+body {
+  font-family: roboto, Arial, "sans-sherif";
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*---------------------------------  -----  ---------------------------------------------------------------*/
+/*---------------------------------  -----  ---------------------------------------------------------------*/
+/*---------------------------------         ---------------------------------------------------------------*/
+/*---------------------------------  -----  ---------------------------------------------------------------*/
+/*---------------------------------  -----  ---------------------------------------------------------------*/
+/*---------------------------------  -----  ---------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+/* page pour divers ecran */
+#bloc_page {
+  margin: auto;
+}
+
+@media all and (max-width: 600px) {
+  /* vue mobile*/
+  #bloc_page {
+    width: auto;
+  }
+}
+
+/* mise en page du logo*/
+#logo {
+  display: block;
+  background-color: #fff;
+  padding: 12px;
+  font-family: shrikhand, Arial, "sans-sherif";
+}
+
+#logo img {
+  width: 20%;
+}
+
+/* vue mobile logo*/
+@media all and (max-width: 600px) {
+  #logo img {
+    width: 30%;
+  }
+  #logo {
+    justify-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* mise en page du map*/
+.map {
+  font-size: 12px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* vue mobile map*/
+@media all and (max-width: 600px) {
+  .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+    background-color: #d8d8d8;
+  }
+}
+
+/* mise en page explorez*/
+.explorez {
+  background-color: #f6f5f5;
+  padding: 40px;
+}
+
+.explorez h1 {
+  font-family: shrikhand;
+}
+
+.decouvre {
+  font-size: 12px;
+}
+
+/* vue mobile map*/
+@media all and (max-width: 600px) {
+  .explorez h1, .decouvre {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style_omf.css.map */
