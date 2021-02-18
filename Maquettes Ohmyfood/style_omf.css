@@ -137,10 +137,14 @@ body {
 @media all and (max-width: 600px) {
   .btn_explorez {
     font-size: 12px;
+    padding: 10px 0px 10px 0px;
     height: 15px;
     width: 150px;
   }
   .linear-gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background: linear-gradient(#ff79da, #9356dc);
+    border-radius: 20px;
     width: 150px;
   }
 }
