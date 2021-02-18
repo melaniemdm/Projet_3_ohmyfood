@@ -1,18 +1,18 @@
 /* importantion des polices*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 /* decription des variabbles*/
-$omf_text_font:roboto;
-$omf_title_font:shrikhand;
-$omf_logo_font:$omf_title_font;
-$omf_font_default:Arial, "sans-sherif";
+$omf_text_font: roboto;
+$omf_title_font: shrikhand;
+$omf_logo_font: $omf_title_font;
+$omf_font_default: Arial, "sans-sherif";
 $omf_font_size_text: 12px;
-$font_size_text_desktop:20px;
+$font_size_text_desktop: 20px;
 $padding: 10px;
 
-body{
-    font-family: $omf_text_font, $omf_title_font, $omf_font_default  ;
+body {
+  font-family: $omf_text_font, $omf_title_font, $omf_font_default;
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -25,105 +25,100 @@ body{
 /*---------------------------------------------------------------------------------------------------------*/
 /* page pour divers ecran */
 #bloc_page {
-    margin: auto;
-  }
-  @media all and (max-width: 600px) {
-    /* vue mobile*/
-    #bloc_page {
-      width: auto;
-    }}
-/* mise en page du logo*/
-#logo{
-    display: block;
-    background-color: #fff;
-    padding: $omf_font_size_text;
-    font-family: $omf_logo_font, $omf_font_default;
+  margin: auto;
 }
-#logo img{
-width: 20%;
-
+@media all and (max-width: 600px) {
+  /* vue mobile*/
+  #bloc_page {
+    width: auto;
+  }
+}
+/* mise en page du logo*/
+#logo {
+  display: block;
+  background-color: #fff;
+  padding: $omf_font_size_text;
+  font-family: $omf_logo_font, $omf_font_default;
+}
+#logo img {
+  width: 20%;
 }
 /* vue mobile logo*/
 @media all and (max-width: 600px) {
-    #logo img{
-        width: 30%;
-        }
-        #logo{
-            display: flex;
-            justify-content: center;
-            
-        }
-    }
-
- /* mise en page du map*/
- .map{
-     font-size: $omf_font_size_text;
-     padding: $padding;
-     background-color:#fff;
-     font-size: $omf_font_size_text;
- }
-/* vue mobile map*/ 
- @media all and (max-width: 600px) {
-    .map{
-        display: flex;
-        justify-content: center;
-        padding: $padding;
-        background-color: rgb(216, 216, 216);
-      }
-    }
- /* mise en page explorez*/
- .explorez{
-     background-color: rgb(246, 245, 245);
-     padding: 40px;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     font-size:$font_size_text_desktop ;
-     
- }  
- .explorez h1{
-        font-family: $omf_text_font;
-    }
-    .decouvre{
-        font-size: $font_size_text_desktop;
-    }
-/* vue mobile map*/ 
-@media all and (max-width: 600px) {
-    .explorez h1, .decouvre{
-        text-align: center;
-    }
-    .explorez {
-    font-size: $omf_font_size_text;
-       }
-       .decouvre{
-        font-size: $omf_font_size_text;
-    }
+  #logo img {
+    width: 30%;
+  }
+  #logo {
+    display: flex;
+    justify-content: center;
+  }
 }
 
- /*bouton explorez*/
- .btn_explorez{
-    border-radius: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding: 15px 0px 15px 0px;
-    height: 20px;
-    width: 300px;
-    color: #fff;
-    box-shadow: 5px 10px 7px #e2e2e2;
-    font-size: $font_size_text_desktop;
-    background: linear-gradient(#ff79da, #9356dc);
-    
-}  
-
-
-  /* vue mobile map*/ 
+/* mise en page du map*/
+.map {
+  font-size: $omf_font_size_text;
+  padding: $padding;
+  background-color: #fff;
+  font-size: $omf_font_size_text;
+}
+/* vue mobile map*/
 @media all and (max-width: 600px) {
-    .btn_explorez{
+  .map {
+    display: flex;
+    justify-content: center;
+    padding: $padding;
+    background-color: rgb(216, 216, 216);
+  }
+}
+/* mise en page explorez*/
+.explorez {
+  background-color: rgb(246, 245, 245);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: $font_size_text_desktop;
+}
+.explorez h1 {
+  font-family: $omf_text_font;
+}
+.decouvre {
+  font-size: $font_size_text_desktop;
+}
+/* vue mobile map*/
+@media all and (max-width: 600px) {
+  .explorez h1,
+  .decouvre {
+    text-align: center;
+  }
+  .explorez {
+    font-size: $omf_font_size_text;
+  }
+  .decouvre {
+    font-size: $omf_font_size_text;
+  }
+}
+
+/*bouton explorez*/
+.btn_explorez {
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+  height: 20px;
+  width: 300px;
+  color: #fff;
+  box-shadow: 5px 10px 7px #e2e2e2;
+  font-size: $font_size_text_desktop;
+  background: linear-gradient(#ff79da, #9356dc);
+}
+
+/* vue mobile map*/
+@media all and (max-width: 600px) {
+  .btn_explorez {
     font-size: $omf_font_size_text;
     padding: 10px 0px 10px 0px;
     height: 15px;
     width: 150px;
+  }
 }
-
-}
-  

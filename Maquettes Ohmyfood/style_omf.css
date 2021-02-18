@@ -102,7 +102,8 @@ body {
 
 /* vue mobile map*/
 @media all and (max-width: 600px) {
-  .explorez h1, .decouvre {
+  .explorez h1,
+  .decouvre {
     text-align: center;
   }
   .explorez {
