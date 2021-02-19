@@ -148,6 +148,7 @@ body {
    gap: 20px;
    &:hover{
     background: rgba($primaire,0.1);
+    color: $primaire;
   }
   & div{
 height: 25px;

@@ -171,6 +171,7 @@ body {
 
 .card_fonctionnement:hover {
   background: rgba(147, 83, 220, 0.1);
+  color: #9353dc;
 }
 
 .card_fonctionnement div {
