@@ -169,8 +169,16 @@ body {
   gap: 20px;
 }
 
+.card_fonctionnement .icon_fonctionnement {
+  color: #ccc5c5;
+}
+
 .card_fonctionnement:hover {
   background: rgba(147, 83, 220, 0.1);
+  color: #9353dc;
+}
+
+.card_fonctionnement:hover .icon_fonctionnement {
   color: #9353dc;
 }
 

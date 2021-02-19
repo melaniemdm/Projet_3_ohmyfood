@@ -146,9 +146,15 @@ body {
    width: 200px;
    display: flex;
    gap: 20px;
+   .icon_fonctionnement{
+    color: #ccc5c5;}
    &:hover{
     background: rgba($primaire,0.1);
     color: $primaire;
+    .icon_fonctionnement{
+      color: $primaire;
+      
+    }
   }
   & div{
 height: 25px;
