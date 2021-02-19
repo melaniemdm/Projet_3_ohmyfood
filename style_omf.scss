@@ -137,6 +137,7 @@ body {
   font-family: $omf_text_font;
   }
  .card_fonctionnement{
+   margin-bottom: 20px;
    border-radius: 20px;
    padding: 20px 70px 20px 70px;
    background-color: $background-color-grey;
@@ -144,17 +145,21 @@ body {
    font-weight: bold;
    width: 200px;
    display: flex;
-   justify-content: space-between;
+   gap: 20px;
    &:hover{
     background: rgba($primaire,0.1);
+  }
+  & div{
+height: 25px;
+line-height: 25px;
   }
  }
  
  .cards_fonctionnement{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  
+  justify-content: space-around;
+  margin-left: 10px;
 }
 /* vue mobile map*/
 @media #{$medium-up} {
@@ -162,29 +167,19 @@ body {
 flex-direction: column;
 flex-wrap: nowrap;
 align-items: center;
-
+margin-left: 1px;
   }
   .card_fonctionnement{
-    margin: 5%;
-    padding: 20px 20px 20px 70px;
-    font-size: $omf_font_size_text;
+      font-size: $omf_font_size_text;
   }
 }
 /* number*/
-.icon_pink{
-  color: #9353dc;
-}
-.white_text{
-  color: red;
- background-color: #9353dc;
-}
+
 .number{
   background-color: #9353dc;
-  height: 25px;
   width: 25px;
-  line-height: 25px;
   color:#fff;
   border-radius: 50%;
   text-align: center;
-  margin-left: -85px;
+  margin-left: -79px;
 }

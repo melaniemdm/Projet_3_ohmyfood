@@ -155,6 +155,7 @@ body {
 }
 
 .card_fonctionnement {
+  margin-bottom: 20px;
   border-radius: 20px;
   padding: 20px 70px 20px 70px;
   background-color: #f6f5f5;
@@ -165,13 +166,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 20px;
 }
 
 .card_fonctionnement:hover {
   background: rgba(147, 83, 220, 0.1);
+}
+
+.card_fonctionnement div {
+  height: 25px;
+  line-height: 25px;
 }
 
 .cards_fonctionnement {
@@ -180,9 +184,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 10px;
 }
 
 /* vue mobile map*/
@@ -197,32 +201,20 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 1px;
   }
   .card_fonctionnement {
-    margin: 5%;
-    padding: 20px 20px 20px 70px;
     font-size: 12px;
   }
 }
 
 /* number*/
-.icon_pink {
-  color: #9353dc;
-}
-
-.white_text {
-  color: red;
-  background-color: #9353dc;
-}
-
 .number {
   background-color: #9353dc;
-  height: 25px;
   width: 25px;
-  line-height: 25px;
   color: #fff;
   border-radius: 50%;
   text-align: center;
-  margin-left: -85px;
+  margin-left: -79px;
 }
 /*# sourceMappingURL=style_omf.css.map */
