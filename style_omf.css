@@ -148,4 +148,44 @@ body {
     width: 150px;
   }
 }
+
+/* fonctionnement*/
+.fonctionnement h1 {
+  font-family: roboto;
+}
+
+.card_fonctionnement {
+  border-radius: 20px;
+  padding: 20px 70px 20px 70px;
+  background-color: #f6f5f5;
+  -webkit-box-shadow: 5px 10px 7px #e2e2e2;
+          box-shadow: 5px 10px 7px #e2e2e2;
+  font-weight: bold;
+}
+
+.cards_fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* vue mobile map*/
+@media all and (max-width: 624px) {
+  .cards_fonctionnement {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .card_fonctionnement {
+    margin: 5%;
+  }
+}
 /*# sourceMappingURL=style_omf.css.map */

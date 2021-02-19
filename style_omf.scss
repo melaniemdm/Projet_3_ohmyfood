@@ -11,6 +11,7 @@ $omf_font_default: Arial, "sans-sherif";
 $omf_font_size_text: 12px;
 $font_size_text_desktop: 20px;
 $padding: 10px;
+$background-color-grey:#f6f5f5;
 
 body {
   font-family: $omf_text_font, $omf_title_font, $omf_font_default;
@@ -73,7 +74,7 @@ body {
 }
 /* mise en page explorez*/
 .explorez {
-  background-color: rgb(246, 245, 245);
+  background-color: $background-color-grey;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -126,5 +127,34 @@ body {
     height: 15px;
     line-height: 15px;
     width: 150px;
+  }
+}
+
+/* fonctionnement*/
+.fonctionnement h1{
+  font-family: $omf_text_font;
+  }
+ .card_fonctionnement{
+   border-radius: 20px;
+   padding: 20px 70px 20px 70px;
+   background-color: $background-color-grey;
+   box-shadow: 5px 10px 7px #e2e2e2;
+   font-weight: bold;
+ }
+ 
+ .cards_fonctionnement{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* vue mobile map*/
+@media #{$medium-up} {
+  .cards_fonctionnement{
+flex-direction: column;
+flex-wrap: nowrap;
+
+  }
+  .card_fonctionnement{
+    margin: 5%;
   }
 }
