@@ -1,0 +1,5 @@
+$medium-up:624px !default;
+$large-up:1024px !default;
+
+$medium-up: "all and (max-width: #{$medium-up})";
+$large-up: "all and(max-width: #{$large-up})";
