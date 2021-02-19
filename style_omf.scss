@@ -143,6 +143,8 @@ body {
    box-shadow: 5px 10px 7px #e2e2e2;
    font-weight: bold;
    width: 200px;
+   display: flex;
+   justify-content: space-between;
    &:hover{
     background: rgba($primaire,0.1);
   }
@@ -167,4 +169,22 @@ align-items: center;
     padding: 20px 20px 20px 70px;
     font-size: $omf_font_size_text;
   }
+}
+/* number*/
+.icon_pink{
+  color: #9353dc;
+}
+.white_text{
+  color: red;
+ background-color: #9353dc;
+}
+.number{
+  background-color: #9353dc;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  color:#fff;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: -85px;
 }
