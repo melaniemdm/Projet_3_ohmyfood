@@ -12,6 +12,8 @@ $omf_font_size_text: 12px;
 $font_size_text_desktop: 20px;
 $padding: 10px;
 $background-color-grey:#f6f5f5;
+$secondaire: #ff79da;
+$primaire:#9353dc;
 
 body {
   font-family: $omf_text_font, $omf_title_font, $omf_font_default;
@@ -112,10 +114,10 @@ body {
   color: #fff;
   box-shadow: 5px 10px 7px #e2e2e2;
   font-size: $font_size_text_desktop;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient($secondaire, $primaire);
   line-height: 20px;
   &:hover{
-    background: linear-gradient(#9356dc, #ff79da);     
+    background: linear-gradient($primaire, $secondaire);     
   }
 }
 
@@ -140,12 +142,17 @@ body {
    background-color: $background-color-grey;
    box-shadow: 5px 10px 7px #e2e2e2;
    font-weight: bold;
+   &:hover{
+    background: rgba($primaire,0.1);
+  }
  }
  
  .cards_fonctionnement{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  
 }
 /* vue mobile map*/
 @media #{$medium-up} {

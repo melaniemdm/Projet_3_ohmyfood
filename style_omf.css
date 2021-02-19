@@ -128,14 +128,14 @@ body {
   -webkit-box-shadow: 5px 10px 7px #e2e2e2;
           box-shadow: 5px 10px 7px #e2e2e2;
   font-size: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9353dc));
+  background: linear-gradient(#ff79da, #9353dc);
   line-height: 20px;
 }
 
 .btn_explorez:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
-  background: linear-gradient(#9356dc, #ff79da);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9353dc), to(#ff79da));
+  background: linear-gradient(#9353dc, #ff79da);
 }
 
 /* vue mobile map*/
@@ -161,6 +161,10 @@ body {
   -webkit-box-shadow: 5px 10px 7px #e2e2e2;
           box-shadow: 5px 10px 7px #e2e2e2;
   font-weight: bold;
+}
+
+.card_fonctionnement:hover {
+  background: rgba(147, 83, 220, 0.1);
 }
 
 .cards_fonctionnement {
