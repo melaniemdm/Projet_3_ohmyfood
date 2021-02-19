@@ -161,6 +161,7 @@ body {
   -webkit-box-shadow: 5px 10px 7px #e2e2e2;
           box-shadow: 5px 10px 7px #e2e2e2;
   font-weight: bold;
+  width: 200px;
 }
 
 .card_fonctionnement:hover {
@@ -187,9 +188,14 @@ body {
             flex-direction: column;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .card_fonctionnement {
     margin: 5%;
+    padding: 20px 20px 20px 70px;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style_omf.css.map */
