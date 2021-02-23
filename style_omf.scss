@@ -13,7 +13,7 @@ $omf_title_font: shrikhand;
 $omf_logo_font: $omf_title_font;
 $omf_font_default: Arial, "sans-sherif";
 $omf_font_size_text: 12px;
-$font_size_text_desktop: 20px;
+$omf_font_size_text_desktop: 20px;
 $padding: 10px;
 $background-color-grey:#f6f5f5;
 $secondaire: #ff79da;
@@ -32,17 +32,26 @@ body {
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
-/* page pour divers ecran */
-#bloc_page {
-  margin: auto;
+
+#bloc_page {  /* vue mobile*/
+  width: auto;
 }
-@media #{$medium-up} {
-  /* vue mobile*/
+@media #{$medium-up} {     /* page pour divers ecran */
   #bloc_page {
-    width: auto;
+    margin: auto;
   }
+ }
+                          /* mise en page du logo*/
+ #logo img {
+  width: 30%;
 }
-/* mise en page du logo*/
+#logo {
+  display: flex;
+  justify-content: center;
+}
+                                /* vue divers ecran*/
+@media #{$medium-up} {
+  
 #logo {
   display: block;
   background-color: #fff;
@@ -52,47 +61,39 @@ body {
 #logo img {
   width: 20%;
 }
-/* vue mobile logo*/
-@media #{$medium-up} {
-  #logo img {
-    width: 30%;
-  }
-  #logo {
-    display: flex;
-    justify-content: center;
-  }
 }
-
-/* mise en page du map*/
+                                      /* mise en page du map*/
 .map {
-  font-size: $omf_font_size_text;
+  display: flex;
+  justify-content: center;
   padding: $padding;
-  background-color: #fff;
-  font-size: $omf_font_size_text;
+  background-color: rgb(216, 216, 216);
 }
-/* vue mobile map*/
+                                            /* vue divers écran*/
 @media #{$medium-up} {
   .map {
-    display: flex;
-    justify-content: center;
+    font-size: $omf_font_size_text;
     padding: $padding;
-    background-color: rgb(216, 216, 216);
+    background-color: #fff;
+    font-size: $omf_font_size_text;
   }
 }
 /* mise en page explorez*/
+
 .explorez {
   background-color: $background-color-grey;
   padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: $font_size_text_desktop;
+  font-size: $omf_font_size_text;
 }
 .explorez h1 {
   font-family: $omf_text_font;
 }
 .decouvre {
-  font-size: $font_size_text_desktop;
+  font-size: $omf_font_size_text;
+  text-align: center;
 }
 /* vue mobile map*/
 @media #{$medium-up}{
@@ -101,10 +102,10 @@ body {
     text-align: center;
   }
   .explorez {
-    font-size: $omf_font_size_text;
+    font-size: $omf_font_size_text_desktop;
   }
   .decouvre {
-    font-size: $omf_font_size_text;
+    font-size: $omf_font_size_text_desktop;
   }
 }
 
@@ -118,7 +119,7 @@ body {
   width: 300px;
   color: #fff;
   box-shadow: 5px 10px 7px #e2e2e2;
-  font-size: $font_size_text_desktop;
+  font-size: $omf_font_size_text;
   background: linear-gradient($secondaire, $primaire);
   line-height: 20px;
   &:hover{
@@ -129,7 +130,7 @@ body {
 /* vue mobile map*/
 @media #{$medium-up} {
   .btn_explorez {
-    font-size: $omf_font_size_text;
+    font-size: $omf_font_size_text_desktop ;
     padding: 10px 0px 10px 0px;
     height: 15px;
     line-height: 15px;
@@ -166,24 +167,25 @@ height: 25px;
 line-height: 25px;
   }
  }
- 
+
  .cards_fonctionnement{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 10px;
-}
-/* vue mobile map*/
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 1px;
+    }
+  .card_fonctionnement{
+        font-size: $omf_font_size_text;
+    }
+ 
+/* vue divers ecran*/
 @media #{$medium-up} {
   .cards_fonctionnement{
-flex-direction: column;
-flex-wrap: nowrap;
-align-items: center;
-margin-left: 1px;
-  }
-  .card_fonctionnement{
-      font-size: $omf_font_size_text;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 10px;
+  }  
 }
 /* number*/
 
@@ -202,11 +204,13 @@ margin-left: 1px;
  padding-bottom: 50px;
  
 }
+
 .cards_restaurants{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-}
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  }
+
 
  .card_restaurants{
   background-color: white;
@@ -247,8 +251,9 @@ justify-content: space-around;
 }
 /* vue mobile map*/
 @media #{$medium-up} {
-.cards_restaurants{
-flex-direction: column;
-align-items: center;
-row-gap: 50px;
-}}
+  .cards_restaurants{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+}

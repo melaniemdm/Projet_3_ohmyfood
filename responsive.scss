@@ -1,5 +1,7 @@
-$medium-up:624px !default;
-$large-up:1024px !default;
+$medium:768px !default;
+$large:1024px !default;
 
-$medium-up: "all and (max-width: #{$medium-up})";
-$large-up: "all and(max-width: #{$large-up})";
+$medium-up: "only screen and (min-width: #{$medium})";
+$medium-down: "only screen and (max-width: #{$medium})";
+$large-up: "only screen and (min-width: #{$large})";
+$large-down: "only screen and (max-width: #{$large})";

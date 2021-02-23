@@ -22,64 +22,64 @@ body {
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
-/* page pour divers ecran */
 #bloc_page {
-  margin: auto;
+  /* vue mobile*/
+  width: auto;
 }
 
-@media all and (max-width: 624px) {
-  /* vue mobile*/
+@media only screen and (min-width: 768px) {
+  /* page pour divers ecran */
   #bloc_page {
-    width: auto;
+    margin: auto;
   }
 }
 
 /* mise en page du logo*/
-#logo {
-  display: block;
-  background-color: #fff;
-  padding: 12px;
-  font-family: shrikhand, Arial, "sans-sherif";
-}
-
 #logo img {
-  width: 20%;
+  width: 30%;
 }
 
-/* vue mobile logo*/
-@media all and (max-width: 624px) {
-  #logo img {
-    width: 30%;
-  }
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* vue divers ecran*/
+@media only screen and (min-width: 768px) {
   #logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: block;
+    background-color: #fff;
+    padding: 12px;
+    font-family: shrikhand, Arial, "sans-sherif";
+  }
+  #logo img {
+    width: 20%;
   }
 }
 
 /* mise en page du map*/
 .map {
-  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px;
-  background-color: #fff;
-  font-size: 12px;
+  background-color: #d8d8d8;
 }
 
-/* vue mobile map*/
-@media all and (max-width: 624px) {
+/* vue divers écran*/
+@media only screen and (min-width: 768px) {
   .map {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    font-size: 12px;
     padding: 10px;
-    background-color: #d8d8d8;
+    background-color: #fff;
+    font-size: 12px;
   }
 }
 
@@ -97,7 +97,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .explorez h1 {
@@ -105,20 +105,21 @@ body {
 }
 
 .decouvre {
-  font-size: 20px;
+  font-size: 12px;
+  text-align: center;
 }
 
 /* vue mobile map*/
-@media all and (max-width: 624px) {
+@media only screen and (min-width: 768px) {
   .explorez h1,
   .decouvre {
     text-align: center;
   }
   .explorez {
-    font-size: 12px;
+    font-size: 20px;
   }
   .decouvre {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 
@@ -133,7 +134,7 @@ body {
   color: #fff;
   -webkit-box-shadow: 5px 10px 7px #e2e2e2;
           box-shadow: 5px 10px 7px #e2e2e2;
-  font-size: 20px;
+  font-size: 12px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9353dc));
   background: linear-gradient(#ff79da, #9353dc);
   line-height: 20px;
@@ -145,9 +146,9 @@ body {
 }
 
 /* vue mobile map*/
-@media all and (max-width: 624px) {
+@media only screen and (min-width: 768px) {
   .btn_explorez {
-    font-size: 12px;
+    font-size: 20px;
     padding: 10px 0px 10px 0px;
     height: 15px;
     line-height: 15px;
@@ -194,32 +195,33 @@ body {
 }
 
 .cards_fonctionnement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1px;
 }
 
-/* vue mobile map*/
-@media all and (max-width: 624px) {
+.card_fonctionnement {
+  font-size: 12px;
+}
+
+/* vue divers ecran*/
+@media only screen and (min-width: 768px) {
   .cards_fonctionnement {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 1px;
-  }
-  .card_fonctionnement {
-    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: 10px;
   }
 }
 
@@ -241,13 +243,14 @@ body {
 }
 
 .cards_restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 50px;
 }
 
 .card_restaurants {
@@ -295,16 +298,15 @@ body {
 }
 
 /* vue mobile map*/
-@media all and (max-width: 624px) {
+@media only screen and (min-width: 768px) {
   .cards_restaurants {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    row-gap: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=style_omf.css.map */
