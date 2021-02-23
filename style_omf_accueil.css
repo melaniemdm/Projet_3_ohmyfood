@@ -159,11 +159,14 @@ body {
   .decouvre {
     padding-top: 10px;
   }
+  .explorez {
+    height: 230px;
+  }
   .explorez h1 {
     padding-top: 10px;
   }
   .btn_explorez {
-    padding-top: 10px;
+    margin-top: 40px;
   }
 }
 
