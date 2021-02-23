@@ -10,17 +10,15 @@ html,body {                      /* reset (par defaut des navigateurs)*/
 /* decription des variabbles*/
 $omf_text_font: roboto;
 $omf_title_font: shrikhand;
-$omf_logo_font: $omf_title_font;
 $omf_font_default: Arial, "sans-sherif";
 $omf_font_size_text: 12px;
-$omf_font_size_text_desktop: 20px;
-$padding: 10px;
-$background-color-grey:#f6f5f5;
+$omf_font_size_titre: 20px;
+$background-color-grey: #f6f5f5;
 $secondaire: #ff79da;
 $primaire:#9353dc;
 
 body {
-  font-family: $omf_text_font, $omf_title_font, $omf_font_default;
+  font-family: $omf_text_font,  $omf_font_default;
 }
 
 
@@ -42,25 +40,25 @@ body {
   }
  }
                           /* mise en page du logo*/
- #logo img {
-  width: 30%;
-}
 #logo {
   display: flex;
   justify-content: center;
+  
 }
+ #logo img {
+  height:30px;
+  width: 160px;  
+  margin-top: 25px;
+  margin-bottom: 16px ;
+  
+}
+
                                 /* vue divers ecran*/
 @media #{$medium-up} {
   
 #logo {
   display: block;
-  background-color: #fff;
-  padding: $omf_font_size_text;
-  font-family: $omf_logo_font, $omf_font_default;
-}
-#logo img {
-  width: 20%;
-}
+ }
 }
 /*---------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
@@ -69,62 +67,63 @@ body {
 /*---------------------------------------------------------------------------------------------------------*/
                                       /* mise en page du map*/
 .map {
-  display: flex;
-  justify-content: center;
-  padding: $padding;
-  background-color: rgb(216, 216, 216);
+height: 50px;  
+background: linear-gradient(rgb(199, 198, 198) ,rgb(235, 229, 229)10% 0.8);
+display: flex;
+justify-content: center;
+align-items: center;
+
+.texte_map{
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: bold;
 }
-                                            /* vue divers écran*/
-@media #{$medium-up} {
-  .map {
-    font-size: $omf_font_size_text;
-    padding: $padding;
-    background-color: #fff;
-    font-size: $omf_font_size_text;
-  }
+.icon_map{
+  font-size: 18px;
+  margin-right: 17px;
 }
+}
+ 
 /* mise en page explorez*/
 
 .explorez {
   background-color: $background-color-grey;
-  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: $omf_font_size_text;
-}
-.explorez h1 {
-  font-family: $omf_text_font;
-}
-.decouvre {
-  font-size: $omf_font_size_text;
-  text-align: center;
-}
-/* vue mobile map*/
-@media #{$medium-up}{
-  .explorez h1,
-  .decouvre {
+  height: 290px;
+  h1 {
+    display: flex;
     text-align: center;
-  }
-  .explorez {
-    font-size: $omf_font_size_text_desktop;
-  }
-  .decouvre {
-    font-size: $omf_font_size_text_desktop;
+    align-content: center;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 40px 60px 10px 40px ;
   }
 }
+.explorez .decouvre{
+  display: flex;
+  text-align: center;
+  align-content: center;
+  margin-right:25px ;
+  margin-left:25px ;
+  font-size: 18px;
+  font-weight: light;
+}
+
 
 /*bouton explorez*/
 .btn_explorez {
-  border-radius: 20px;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 0px 15px 0px;
-  height: 20px;
-  width: 300px;
+  border-radius: 30px;
+  text-align: center; 
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  line-height: 50px;
+  width: 220px;
   color: #fff;
   box-shadow: 5px 10px 7px #e2e2e2;
-  font-size: $omf_font_size_text;
+  font-size: 15px;
   background: linear-gradient($secondaire, $primaire);
   line-height: 20px;
   &:hover{
@@ -134,13 +133,15 @@ body {
 
 /* vue mobile map*/
 @media #{$medium-up} {
-  .btn_explorez {
-    font-size: $omf_font_size_text_desktop ;
-    padding: 10px 0px 10px 0px;
-    height: 15px;
-    line-height: 15px;
-    width: 150px;
-  }
+  .decouvre {
+  padding-top: 10px;
+}
+.explorez h1{
+  padding-top: 10px;
+}  
+.btn_explorez {
+  padding-top: 10px;
+}
 }
 /*---------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
