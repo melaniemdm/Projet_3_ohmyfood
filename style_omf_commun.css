@@ -1,0 +1,29 @@
+/* decription des variabbles*/
+.omf_btn {
+  /* style des boutons*/
+  /* Pour centrer les elements*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+  width: 220px;
+  color: #fff;
+  -webkit-box-shadow: 5px 10px 7px #e2e2e2;
+          box-shadow: 5px 10px 7px #e2e2e2;
+  font-size: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9353dc));
+  background: linear-gradient(#ff79da, #9353dc);
+}
+
+.omf_btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9353dc), to(#ff79da));
+  background: linear-gradient(#9353dc, #ff79da);
+}
+/*# sourceMappingURL=style_omf_commun.css.map */
