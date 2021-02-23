@@ -142,7 +142,6 @@ align-items: center;
     padding-top: 10px;
   }  
 }
-
 .btn_explorez {
   margin-top: 40px;
 }
@@ -155,7 +154,15 @@ align-items: center;
 
 /* fonctionnement*/
 .fonctionnement h1{
+  padding-top: 20px;
+  margin-left: 29px;
+  padding-bottom: 6px; 
   font-family: $omf_text_font;
+  font-weight: 900;
+  }
+  .cards_fonctionnement{
+    padding-left: 30px;
+    
   }
  .card_fonctionnement{
    margin-bottom: 20px;
@@ -164,7 +171,7 @@ align-items: center;
    background-color: $background-color-grey;
    box-shadow: 5px 10px 7px #e2e2e2;
    font-weight: bold;
-   width: 200px;
+   width: 190px;
    display: flex;
    gap: 20px;
    .icon_fonctionnement{
@@ -177,7 +184,7 @@ align-items: center;
       
     }
   }
-  & div{
+  & div{            /* réalisation des ronds*/
 height: 25px;
 line-height: 25px;
   }
