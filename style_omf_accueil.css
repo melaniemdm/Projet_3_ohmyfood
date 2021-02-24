@@ -219,6 +219,7 @@ body {
 
 .card_fonctionnement .icon_fonctionnement {
   color: #ccc5c5;
+  font-size: 20px;
 }
 
 .card_fonctionnement:hover {

@@ -155,7 +155,9 @@ align-items: center;
    display: flex;
    gap: 20px;
    .icon_fonctionnement{
-    color: #ccc5c5;}
+    color: #ccc5c5;
+    font-size: 20px;
+  }
    &:hover{
     background: rgba($primaire,0.1);
     color: $primaire;
