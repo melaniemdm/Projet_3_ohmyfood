@@ -349,6 +349,17 @@ body {
   cursor: pointer;
 }
 
+.new {
+  font-size: 15px;
+  color: #0a9270;
+  border: #0a9270 2px solid;
+  background-color: #99e2d0;
+  font-weight: bold;
+  display: block;
+  margin-left: 250px;
+  padding: 5px 10px 5px 10px;
+}
+
 .photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
   /* Déclaration pour la taille et position des photos d'accueil*/
   border-radius: 10px 10px 0px 0px;

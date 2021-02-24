@@ -260,7 +260,16 @@ align-items: center;
 .icon_heart{                /*curseur pointer*/
   cursor:pointer;
 }
-
+.new{
+  font-size: 15px;
+  color: #0a9270;
+  border: #0a9270 2px solid;
+  background-color:#99e2d0 ;
+  font-weight: bold;
+   display: block;
+  margin-left: 250px;
+ padding: 5px 10px 5px 10px;
+}
 
 
 %photo_accueil_taille{                         /* Déclaration pour la taille et position des photos d'accueil*/
