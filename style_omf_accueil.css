@@ -332,16 +332,16 @@ body {
   color: #9e9a9a;
 }
 
+.heart_close {
+  color: transparent;
+}
+
 .heart_close:active {
-  -webkit-transition: all 450ms 150ms;
-  transition: all 450ms 150ms;
+  -webkit-transition: all 450ms;
+  transition: all 450ms;
   /*transition*/
   font-size: 25px;
   color: #9353dc;
-}
-
-.heart_close {
-  color: transparent;
 }
 
 .icon_heart {

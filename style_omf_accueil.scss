@@ -246,17 +246,17 @@ align-items: center;
   font-size: 25px;
   color:#9e9a9a ;
     }
-
-  .heart_close:active{
-    transition: all 450ms 150ms; /*transition*/
-    font-size: 25px;
-    color: $primaire;
+    .heart_close{
+      color: transparent;
+      &:active{
+        transition: all 450ms; /*transition*/
+        font-size: 25px;
+        color: $primaire;
+        
+      }
+    }
     
-  }
-.heart_close{
-  color: transparent;
-}
-
+  
 .icon_heart{                /*curseur pointer*/
   cursor:pointer;
 }
