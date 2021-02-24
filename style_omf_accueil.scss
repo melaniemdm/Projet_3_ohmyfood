@@ -300,10 +300,11 @@ align-items: center;
   @extend %photo_accueil_taille;
 }
 
-/* vue mobile map*/
-@media #{$medium-up} {
+
+@media #{$medium-up} {                          /* vue mobile map*/
   .cards_restaurants{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     }
