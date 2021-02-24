@@ -363,6 +363,11 @@ body {
   margin-top: 15px;
 }
 
+.restaurant_detail a {
+  text-decoration: none;
+  color: black;
+}
+
 .heart_open {
   /*Mise en page coeurs*/
   font-size: 25px;

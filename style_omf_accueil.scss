@@ -237,12 +237,16 @@ align-items: center;
 .info_resto{
   font-size: 18px;
   margin-left: 15px;
+ 
 }
 .restaurant_detail{
   display: grid;
   grid-template-columns: 6fr 1fr;
   margin-top: 15px; 
-
+  & a{
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .heart_open{                            /*Mise en page coeurs*/
