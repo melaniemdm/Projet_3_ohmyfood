@@ -189,24 +189,21 @@ body {
 /*--------------------------------------Section Fonctionnement---------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
-/* fonctionnement*/
 .fonctionnement {
+  /* fonctionnement*/
   margin-bottom: 70px;
 }
 
 .fonctionnement h1 {
   padding-top: 30px;
-  margin-left: 29px;
+  margin-left: 20px;
   padding-bottom: 6px;
   font-family: roboto;
   font-weight: 900;
 }
 
-.cards_fonctionnement {
-  padding-left: 30px;
-}
-
 .card_fonctionnement {
+  font-size: 16px;
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 25px 70px 25px 70px;
@@ -252,10 +249,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 1px;
-}
-
-.card_fonctionnement {
-  font-size: 16px;
+  padding-left: 30px;
 }
 
 /* vue divers ecran*/
@@ -268,7 +262,6 @@ body {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-left: 10px;
   }
 }
 
@@ -290,8 +283,13 @@ body {
 /*les restaurants*/
 .restaurants {
   background-color: #f6f5f5;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 50px;
+}
+
+.restaurants h1 {
+  font-weight: 900;
+  margin-left: 20px;
 }
 
 .cards_restaurants {
@@ -302,21 +300,46 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  row-gap: 50px;
 }
 
 .card_restaurants {
   background-color: white;
+  -webkit-box-shadow: 5px 10px 7px #e2e2e2;
+          box-shadow: 5px 10px 7px #e2e2e2;
   border-radius: 10px 10px 10px 10px;
-  border: black solid 2px;
-  height: 10rem;
-  width: 22rem;
+  height: 250px;
+  width: 330px;
+  margin-left: 20px;
+}
+
+.info_resto {
+  font-size: 18px;
+}
+
+.heart_open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heart_open {
+  font-size: 25px;
+  color: #9e9a9a;
+}
+
+.heart_close {
+  font-size: 25px;
+  color: #9353dc;
 }
 
 .photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
   /* Déclaration pour la taille et position des photos d'accueil*/
   border-radius: 10px 10px 0px 0px;
-  height: 90px;
+  height: 175px;
   background-position: center;
   background-size: cover;
   /* taille du backgroung couvre tout*/
