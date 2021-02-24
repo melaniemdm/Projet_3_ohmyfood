@@ -249,13 +249,18 @@ align-items: center;
     .heart_close{
       color: transparent;
      &:active{
-        transition: all 450ms 150ms; /*transition*/
-        font-size: 25px;
-        color: $primaire;
-        
+        /*transition: all 450ms 150ms;     /*transition*/
+        display: block;
+        .fas{
+      font-size: 25px;
+      color: #7751a3;
+      background: -webkit-linear-gradient(#7751a3, pink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
       }
     }
-
+    
     
   
   

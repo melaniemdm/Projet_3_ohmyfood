@@ -337,8 +337,16 @@ body {
 }
 
 .heart_close:active {
+  /*transition: all 450ms 150ms;     /*transition*/
+  display: block;
+}
+
+.heart_close:active .fas {
   font-size: 25px;
-  color: #9353dc;
+  color: #7751a3;
+  background: -webkit-linear-gradient(#7751a3, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .icon_heart {
