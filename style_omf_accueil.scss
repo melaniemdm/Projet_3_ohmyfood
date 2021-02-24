@@ -219,20 +219,28 @@ align-items: center;
   flex-direction: column;
   align-items: center;
   
+  
   }
  .card_restaurants{
   background-color: white;
-  box-shadow: 5px 10px 7px #e2e2e2;
-  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 10px #e2e2e2;
+  border-radius: 20px 20px 20px 20px;
   height: 250px;
   width: 330px;
   margin-left: 20px;
+  margin-bottom: 20px;
      }
 
 .info_resto{
   font-size: 18px;
+  margin-left: 15px;
 }
+.restaurant_detail{
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  margin-top: 15px; 
 
+}
 
 .heart_open{                            /*Mise en page coeurs*/
   font-size: 25px;
@@ -240,14 +248,18 @@ align-items: center;
     }
 
   .heart_close:active{
+    transition: all 450ms 150ms; /*transition*/
     font-size: 25px;
     color: $primaire;
+    
   }
 .heart_close{
   color: transparent;
 }
 
-
+.icon_heart{                /*curseur pointer*/
+  cursor:pointer;
+}
 
 
 

@@ -304,16 +304,26 @@ body {
 
 .card_restaurants {
   background-color: white;
-  -webkit-box-shadow: 5px 10px 7px #e2e2e2;
-          box-shadow: 5px 10px 7px #e2e2e2;
-  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 10px 10px 10px #e2e2e2;
+          box-shadow: 10px 10px 10px #e2e2e2;
+  border-radius: 20px 20px 20px 20px;
   height: 250px;
   width: 330px;
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .info_resto {
   font-size: 18px;
+  margin-left: 15px;
+}
+
+.restaurant_detail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 1fr;
+      grid-template-columns: 6fr 1fr;
+  margin-top: 15px;
 }
 
 .heart_open {
@@ -323,12 +333,20 @@ body {
 }
 
 .heart_close:active {
+  -webkit-transition: all 450ms 150ms;
+  transition: all 450ms 150ms;
+  /*transition*/
   font-size: 25px;
   color: #9353dc;
 }
 
 .heart_close {
   color: transparent;
+}
+
+.icon_heart {
+  /*curseur pointer*/
+  cursor: pointer;
 }
 
 .photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
