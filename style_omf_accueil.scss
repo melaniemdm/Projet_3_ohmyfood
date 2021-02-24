@@ -179,14 +179,17 @@ align-items: center;
         }
 
 
-/* vue divers ecran*/
-@media #{$medium-up} {
+
+@media #{$medium-up} {                        /* vue divers ecran fonctionnement*/
   .cards_fonctionnement{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-  }  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+.fonctionnement{
+  margin-bottom: 30px;
+}   
+  
 }
 /* number*/
 

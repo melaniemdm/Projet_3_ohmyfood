@@ -252,16 +252,17 @@ body {
   padding-left: 30px;
 }
 
-/* vue divers ecran*/
 @media only screen and (min-width: 768px) {
+  /* vue divers ecran fonctionnement*/
   .cards_fonctionnement {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+  .fonctionnement {
+    margin-bottom: 30px;
   }
 }
 
