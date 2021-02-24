@@ -342,11 +342,13 @@ body {
 }
 
 .heart_close:active .fas {
+  /*degradé icon heart*/
   font-size: 25px;
   color: #9353dc;
   background: -webkit-linear-gradient(#9353dc, #ff79da);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .icon_heart {

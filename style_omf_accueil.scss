@@ -251,18 +251,17 @@ align-items: center;
      &:active{
         /*transition: all 450ms 150ms;     /*transition*/
         display: block;
-        .fas{
+        .fas{                               /*degradé icon heart*/
       font-size: 25px;
       color: $primaire;
       background: -webkit-linear-gradient($primaire, $secondaire);
       background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      color: transparent;
     }
       }
     }
-    
-    
-  
+      
   
 .icon_heart{                /*curseur pointer*/
   cursor:pointer;
