@@ -343,8 +343,8 @@ body {
 
 .heart_close:active .fas {
   font-size: 25px;
-  color: #7751a3;
-  background: -webkit-linear-gradient(#7751a3, pink);
+  color: #9353dc;
+  background: -webkit-linear-gradient(#9353dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -253,8 +253,8 @@ align-items: center;
         display: block;
         .fas{
       font-size: 25px;
-      color: #7751a3;
-      background: -webkit-linear-gradient(#7751a3, pink);
+      color: $primaire;
+      background: -webkit-linear-gradient($primaire, $secondaire);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
