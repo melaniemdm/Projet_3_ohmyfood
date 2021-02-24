@@ -388,10 +388,12 @@ footer {
   padding-left: 20px;
 }
 
-#logo_footer img {
-  padding-top: 20px;
-  height: 25px;
-  background-color: #fff;
+#logo_footer {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-family: shrikhand;
+  font-size: 17px;
+  color: #fff;
 }
 
 .proposer i, .devenir i {
@@ -399,7 +401,11 @@ footer {
   margin-bottom: 10px;
 }
 
-.mentions, .contact {
+.contact {
+  margin-bottom: 20px;
+}
+
+.mentions {
   margin-bottom: 10px;
 }
 /*# sourceMappingURL=style_omf_accueil.css.map */

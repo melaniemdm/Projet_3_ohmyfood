@@ -303,15 +303,20 @@ footer{
   padding-left: 20px;
   
 }
-#logo_footer img{
-  padding-top: 20px;
-  height: 25px;
-  background-color: #fff;
+#logo_footer{
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-family: shrikhand;
+  font-size: 17px;
+  color: #fff;
 }
 .proposer i, .devenir i{
   padding-right: 15px;
   margin-bottom: 10px;
 }
-.mentions, .contact{
-  margin-bottom: 10px;
+.contact{
+  margin-bottom: 20px;
 } 
+.mentions{
+  margin-bottom: 10px;
+}
