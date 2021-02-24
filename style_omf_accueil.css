@@ -280,8 +280,8 @@ body {
 /*--------------------------------------Section restaurants------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
-/*les restaurants*/
 .restaurants {
+  /*les restaurants*/
   background-color: #f6f5f5;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -317,23 +317,18 @@ body {
 }
 
 .heart_open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.heart_open {
+  /*Mise en page coeurs*/
   font-size: 25px;
   color: #9e9a9a;
 }
 
-.heart_close {
+.heart_close:active {
   font-size: 25px;
   color: #9353dc;
+}
+
+.heart_close {
+  color: transparent;
 }
 
 .photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
