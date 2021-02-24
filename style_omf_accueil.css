@@ -337,9 +337,6 @@ body {
 }
 
 .heart_close:active {
-  -webkit-transition: all 450ms;
-  transition: all 450ms;
-  /*transition*/
   font-size: 25px;
   color: #9353dc;
 }

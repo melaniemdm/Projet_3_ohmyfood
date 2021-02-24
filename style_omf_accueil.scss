@@ -248,14 +248,16 @@ align-items: center;
     }
     .heart_close{
       color: transparent;
-      &:active{
-        transition: all 450ms; /*transition*/
+     &:active{
+        transition: all 450ms 150ms; /*transition*/
         font-size: 25px;
         color: $primaire;
         
       }
     }
+
     
+  
   
 .icon_heart{                /*curseur pointer*/
   cursor:pointer;
