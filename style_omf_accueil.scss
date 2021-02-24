@@ -133,8 +133,11 @@ align-items: center;
 /*---------------------------------------------------------------------------------------------------------*/
 
 /* fonctionnement*/
+.fonctionnement{
+  margin-bottom: 70px;
+}
 .fonctionnement h1{
-  padding-top: 20px;
+  padding-top: 30px;
   margin-left: 29px;
   padding-bottom: 6px; 
   font-family: $omf_text_font;
@@ -147,7 +150,7 @@ align-items: center;
  .card_fonctionnement{
    margin-bottom: 20px;
    border-radius: 20px;
-   padding: 20px 70px 20px 70px;
+   padding: 25px 70px 25px 70px;
    background-color: $background-color-grey;
    box-shadow: 5px 10px 7px #e2e2e2;
    font-weight: bold;
@@ -179,7 +182,7 @@ line-height: 25px;
   margin-left: 1px;
     }
   .card_fonctionnement{
-        font-size: $omf_font_size_text;
+        font-size: 16px;
     }
  
 /* vue divers ecran*/
