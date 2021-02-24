@@ -28,7 +28,7 @@ html, body {
   color: #fff;
   -webkit-box-shadow: 5px 10px 7px #e2e2e2;
           box-shadow: 5px 10px 7px #e2e2e2;
-  font-size: 15px;
+  font-size: 16px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9353dc));
   background: linear-gradient(#ff79da, #9353dc);
 }
@@ -145,6 +145,10 @@ body {
   font-size: 24px;
   font-weight: 900;
   margin: 40px 60px 10px 40px;
+}
+
+.decouvre {
+  margin-bottom: 10px;
 }
 
 .explorez .decouvre {
