@@ -337,7 +337,9 @@ body {
 }
 
 .heart_close:active {
-  /*transition: all 450ms 150ms;     /*transition*/
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+  /*transition*/
   display: block;
 }
 

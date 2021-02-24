@@ -249,7 +249,7 @@ align-items: center;
     .heart_close{
       color: transparent;
      &:active{
-        /*transition: all 450ms 150ms;     /*transition*/
+      transition: all 2s ease-out;     /*transition*/
         display: block;
         .fas{                               /*degradé icon heart*/
       font-size: 25px;
@@ -258,7 +258,7 @@ align-items: center;
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-    }
+      }
       }
     }
       
