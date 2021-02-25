@@ -2,7 +2,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* variables pour les écrans*/
-/* decription des variabbles*/
+/* decription des variables*/
+/* Variables photos*/
+.photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
+  /* Déclaration pour la taille et position des photos d'accueil*/
+  border-radius: 10px 10px 0px 0px;
+  height: 175px;
+  background-position: center;
+  background-size: cover;
+  /* taille du backgroung couvre tout*/
+}
+
+.photo_gout {
+  /* Déclaration pour la taille et position des photos */
+  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.photo_enchante {
+  background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.photo_ala_fr {
+  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.photo_delice_sens {
+  background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
 .omf_btn {
   /* style des boutons*/
   /* Pour centrer les elements*/
@@ -112,4 +139,11 @@ footer {
 }
 
 /* style commun a toutes les pages*/
+.fleche i {
+  background-color: red;
+}
+
+.photo_gout {
+  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
 /*# sourceMappingURL=style_omf_restaurant.css.map */

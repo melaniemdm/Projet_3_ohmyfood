@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import "./responsive.scss" ;                                 /* variables pour les écrans*/
 
-/* decription des variabbles*/
+
+/* decription des variables*/
 $omf_text_font: roboto;
 $omf_title_font: shrikhand;
 $omf_font_default: Arial, "sans-sherif";
@@ -11,11 +12,48 @@ $background-color-grey: #f6f5f5;
 $secondaire: #ff79da;
 $primaire:#9353dc;
 
+/* Variables photos*/
+$omf_background-image_gout: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+$omf_background-image_enchante:url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+$omf_background-image_francaise: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+$omf_background-image_delice:url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+
+
 @mixin centrer {                     /* Pour centrer les elements*/
     display: flex;
     justify-content: space-around;
     align-items: center;  
 }
+
+
+%photo_accueil_taille{                         /* Déclaration pour la taille et position des photos d'accueil*/
+  border-radius: 10px 10px 0px 0px;
+  height: 175px;
+  background-position: center;
+  background-size: cover; /* taille du backgroung couvre tout*/
+}
+
+.photo_gout {                                  /* Déclaration pour la taille et position des photos */
+  background-image: $omf_background-image_gout;
+  @extend %photo_accueil_taille;
+  }
+.photo_enchante{
+  background-image: $omf_background-image_enchante;
+  @extend %photo_accueil_taille;
+  }
+.photo_ala_fr{
+  background-image: $omf_background-image_francaise;
+  @extend %photo_accueil_taille;
+ }
+.photo_delice_sens{
+  background-image: $omf_background-image_delice;
+  @extend %photo_accueil_taille;
+}
+
+
+
+
+
 
 
 

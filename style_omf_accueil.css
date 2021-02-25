@@ -9,7 +9,34 @@ html, body {
 
 /* importantion des fichiers scss*/
 /* variables pour les écrans*/
-/* decription des variabbles*/
+/* decription des variables*/
+/* Variables photos*/
+.photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
+  /* Déclaration pour la taille et position des photos d'accueil*/
+  border-radius: 10px 10px 0px 0px;
+  height: 175px;
+  background-position: center;
+  background-size: cover;
+  /* taille du backgroung couvre tout*/
+}
+
+.photo_gout {
+  /* Déclaration pour la taille et position des photos */
+  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.photo_enchante {
+  background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.photo_ala_fr {
+  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.photo_delice_sens {
+  background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
 .omf_btn, .btn_explorez {
   /* style des boutons*/
   /* Pour centrer les elements*/
@@ -413,31 +440,6 @@ body {
   margin-left: 240px;
   margin-top: 10px;
   padding: 5px 10px 5px 10px;
-}
-
-.photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
-  /* Déclaration pour la taille et position des photos d'accueil*/
-  border-radius: 10px 10px 0px 0px;
-  height: 175px;
-  background-position: center;
-  background-size: cover;
-  /* taille du backgroung couvre tout*/
-}
-
-.photo_gout {
-  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-}
-
-.photo_enchante {
-  background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-}
-
-.photo_ala_fr {
-  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-}
-
-.photo_delice_sens {
-  background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 @media only screen and (min-width: 768px) {

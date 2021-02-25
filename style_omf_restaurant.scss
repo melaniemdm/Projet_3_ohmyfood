@@ -1,1 +1,8 @@
 @import "./style_omf_commun.scss";                             /* style commun a toutes les pages*/
+
+.fleche i {
+    background-color: red;
+}
+.photo_gout {
+    background-image: $omf_background-image_gout;
+}
