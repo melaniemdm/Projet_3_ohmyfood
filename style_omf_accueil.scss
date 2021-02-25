@@ -10,7 +10,7 @@ html,body {                      /* reset (par defaut des navigateurs)*/
 body {
   font-family: $omf_text_font,  $omf_font_default;
 }
-
+/*---------------------------------------Varaibles------------------------------------------------------------------*/
 
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -28,7 +28,7 @@ align-items: center;
 
 .texte_map{
   font-size: 16px;
-  font-family: roboto;
+  font-family: $omf_text_font;
   font-weight: bold;
 }
 .icon_map{
@@ -154,7 +154,7 @@ align-items: center;
 /* number*/
 
 .number{
-  background-color: #9353dc;
+  background-color: $primaire;
   width: 25px;
   color:#fff;
   border-radius: 50%;
