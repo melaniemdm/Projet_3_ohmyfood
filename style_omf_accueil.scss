@@ -210,7 +210,7 @@ align-items: center;
 }
 
 .heart_open{                            /*Mise en page coeurs*/
-  font-size: 25px;
+  font-size: $omf_font_size_heart;
   color:#9e9a9a ;
     }
     .heart_close{
@@ -220,7 +220,7 @@ align-items: center;
         display: block;
         .fas{                               /*degradé icon heart*/
           transition: all 150ms ease-out;     /*transition*/
-      font-size: 25px;
+      font-size: $omf_font_size_heart;
       color: $primaire;
       background: -webkit-linear-gradient($primaire, $secondaire);
       background-clip: text;
