@@ -152,7 +152,7 @@ body {
 
 .fleche i {
   /* positionnement de la flèche*/
-  padding-top: 20px;
+  padding-top: 25px;
   margin-left: -70px;
   -ms-flex-line-pack: center;
       align-content: center;
