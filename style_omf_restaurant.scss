@@ -113,7 +113,7 @@ font-size: 25px;
     display: flex;
 align-content: center;
 justify-content: center;
-padding-bottom: 55px;
+padding-bottom: 65px;
 margin-top: -9px
 }
 .btn_commande{
@@ -123,3 +123,9 @@ margin-top: -9px
   .menu{
       background-color: $background-color-grey;
   } 
+  .entrees {
+      margin-bottom: 25%;
+  }
+  .desserts{
+      margin-top: 20px;
+  }
