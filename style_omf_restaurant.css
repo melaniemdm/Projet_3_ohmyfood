@@ -36,7 +36,7 @@ html, body {
   background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
-.omf_btn {
+.omf_btn, .btn_commande {
   /* style des boutons*/
   /* Pour centrer les elements*/
   display: -webkit-box;
@@ -59,7 +59,7 @@ html, body {
   background: linear-gradient(#ff79da, #9353dc);
 }
 
-.omf_btn:hover {
+.omf_btn:hover, .btn_commande:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9353dc), to(#ff79da));
   background: linear-gradient(#9353dc, #ff79da);
 }
@@ -197,7 +197,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
-  background-color: aqua;
+  background-color: #f6f5f5;
   height: 100px;
   border-radius: 30px;
   margin-top: -50px;
@@ -221,7 +221,7 @@ body {
 }
 
 .cards_menu {
-  background-color: chartreuse;
+  background-color: #f6f5f5;
   margin-top: -30px;
   height: 330px;
 }
@@ -231,6 +231,7 @@ body {
   font-size: 17px;
   font-weight: lighter;
   padding-left: 17px;
+  background-color: #f6f5f5;
 }
 
 .separateur {
@@ -245,13 +246,13 @@ body {
 .card_menu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
+  -ms-grid-columns: 7fr 1fr;
+      grid-template-columns: 7fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-column-gap: 15px;
   border-radius: 15px;
-  background-color: coral;
+  background-color: #faf7f6;
   -ms-flex-line-pack: center;
       align-content: center;
   width: auto;
@@ -271,11 +272,32 @@ body {
 }
 
 .detail_entree {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .somme {
-  padding-left: 15px;
   font-weight: bold;
+}
+
+.commander {
+  background-color: #f6f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 55px;
+  margin-top: -9px;
+}
+
+.btn_commande {
+  width: 180px;
+}
+
+.menu {
+  background-color: #f6f5f5;
 }
 /*# sourceMappingURL=style_omf_restaurant.css.map */

@@ -42,7 +42,7 @@ body{                   /* 100% de la page*/
 .detail_resto{                   /* style du div nom resto et heart*/
     display: flex;
     padding-top: 30px;
-    background-color: aqua;
+    background-color: $background-color-grey;
     height: 100px;
     border-radius: 30px;
     margin-top: -50px;
@@ -62,7 +62,7 @@ font-size: 25px;
    color: rgb(119, 117, 117);
 }
 .cards_menu{
-    background-color: chartreuse;
+    background-color: $background-color-grey;
     margin-top: -30px;
     height: 330px;
 }
@@ -70,6 +70,7 @@ font-size: 25px;
     font-size: 17px;
     font-weight: lighter;
     padding-left: 17px;
+    background-color: $background-color-grey;
 }
 .separateur{
     background-color: $tertiaire;
@@ -82,11 +83,11 @@ font-size: 25px;
 
 .card_menu{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 7fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 15px;
     border-radius: 15px;
-    background-color: coral;
+    background-color: rgb(250, 247, 246);
     align-content: center;
     width: auto;
     margin-left: 15px;
@@ -102,9 +103,23 @@ font-size: 25px;
     font-weight: bold;
 }
 .detail_entree{
-    font-size: 14px;
+    font-size: 15px;
 }
 .somme{
-    padding-left: 15px;
     font-weight: bold;
 }
+.commander{
+    background-color: $background-color-grey;
+    display: flex;
+align-content: center;
+justify-content: center;
+padding-bottom: 55px;
+margin-top: -9px
+}
+.btn_commande{
+    @extend .omf_btn;
+    width: 180px ;
+   }
+  .menu{
+      background-color: $background-color-grey;
+  } 
