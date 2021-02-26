@@ -320,6 +320,13 @@ body {
   margin-bottom: 25%;
 }
 
+@media only screen and (min-width: 768px) {
+  /*vue divers ecran*/
+  .entrees {
+    margin-bottom: 7%;
+  }
+}
+
 .desserts {
   margin-top: 20px;
 }

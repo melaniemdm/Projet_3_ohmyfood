@@ -137,6 +137,12 @@ margin-top: -9px
   .entrees {
       margin-bottom: 25%;
   }
+  @media #{$medium-up} {                               /*vue divers ecran*/
+    .entrees {
+        margin-bottom: 7%;
+    }
+}
+
   .desserts{
       margin-top: 20px;
   }
