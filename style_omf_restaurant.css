@@ -222,6 +222,20 @@ body {
 
 .cards_menu {
   background-color: chartreuse;
+  margin-top: -30px;
+}
+
+.titre {
+  font-size: 23px;
+  font-weight: lighter;
+  padding-left: 17px;
+}
+
+.separateur {
+  background-color: crimson;
+  height: 5px;
+  width: 30px;
+  margin-left: 17px;
 }
 
 .card_menu {
