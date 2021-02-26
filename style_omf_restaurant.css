@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* variables pour les écrans*/
+html, body {
+  /* reset (par defaut des navigateurs)*/
+  margin: 0;
+  padding: 0;
+}
+
 /* decription des variables*/
 /* Variables photos*/
 .photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
@@ -139,11 +145,24 @@ footer {
 }
 
 /* style commun a toutes les pages*/
+body {
+  /* 100% de la page*/
+  width: 100%;
+}
+
 .fleche i {
-  background-color: red;
+  /* positionnement de la flèche*/
+  padding-top: 20px;
+  margin-left: -70px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 20px;
 }
 
 .photo_gout {
+  /* photo du restaurant*/
   background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  border-radius: 0;
+  width: 100%;
 }
 /*# sourceMappingURL=style_omf_restaurant.css.map */

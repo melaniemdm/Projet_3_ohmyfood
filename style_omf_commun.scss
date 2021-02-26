@@ -3,6 +3,11 @@
 @import "./responsive.scss" ;                                 /* variables pour les écrans*/
 
 
+html,body {                      /* reset (par defaut des navigateurs)*/
+  margin: 0; 
+  padding: 0; 
+}
+
 /* decription des variables*/
 $omf_text_font: roboto;
 $omf_title_font: shrikhand;

@@ -1,7 +1,4 @@
-html,body {                      /* reset (par defaut des navigateurs)*/
-  margin: 0; 
-  padding: 0; 
-}
+
 /* importantion des fichiers scss*/
 @import "./style_omf_commun.scss";                             /* style commun a toutes les pages*/
 
@@ -213,11 +210,10 @@ align-items: center;
   font-size: $omf_font_size_heart;
   color:#9e9a9a ;
     }
-    .heart_close{
+    .heart_close a{
       color: transparent;
-     &:active{
-      
-        display: block;
+     &:focus{                           /*cliquable icon heart*/
+              display: block;
         .fas{                               /*degradé icon heart*/
           transition: all 150ms ease-out;     /*transition*/
       font-size: $omf_font_size_heart;
@@ -229,6 +225,7 @@ align-items: center;
       }
       }
     }
+    
       
   
 .icon_heart{                /*curseur pointer*/
