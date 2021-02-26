@@ -159,6 +159,10 @@ body {
   font-size: 20px;
 }
 
+.fleche a {
+  color: black;
+}
+
 .photo_gout, .photo_enchante, .photo_delice_sens, .photo_ala_fr {
   /* Pour positionner les photos*/
   border-radius: 0;
