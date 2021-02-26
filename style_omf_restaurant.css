@@ -212,6 +212,13 @@ body {
   padding-right: 10%;
 }
 
+@media only screen and (min-width: 768px) {
+  /*vue divers ecran*/
+  .nom_restaurant {
+    padding-right: 70%;
+  }
+}
+
 .heart_open {
   /* Heart dans la carte du restaurant*/
   padding-top: 5px;
@@ -262,6 +269,14 @@ body {
   padding-left: 3%;
   -webkit-box-shadow: 2px 2px 5px 5px #e2e2e2;
           box-shadow: 2px 2px 5px 5px #e2e2e2;
+}
+
+@media only screen and (min-width: 768px) {
+  /*vue divers ecran*/
+  .card_menu {
+    -ms-grid-columns: 20fr 1fr;
+        grid-template-columns: 20fr 1fr;
+  }
 }
 
 .titre_entree {
