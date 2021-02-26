@@ -64,7 +64,7 @@ font-size: 25px;
 .cards_menu{
     background-color: chartreuse;
     margin-top: -30px;
-    height: 230px;
+    height: 330px;
 }
 .titre{                    /* Entrées, plats, desserts*/
     font-size: 17px;
@@ -82,15 +82,17 @@ font-size: 25px;
 
 .card_menu{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 20px;
     border-radius: 15px;
     background-color: coral;
     align-content: center;
-    width: 335px;
+    width: 10auto;
     margin-left: 15px;
-    padding-left: 10px;
+    margin-right: 14px;
+    margin-bottom: 15px;
+    padding-left: 3%;
     padding-bottom: 5px;
     box-shadow: 10px 5px 30px 20px #e2e2e2;
 }
@@ -98,14 +100,13 @@ font-size: 25px;
     font-size: 19px;
     grid-column: 1/span2;
     padding-top: 10px;
-    
     font-weight: bold;
 }
 .detail_entree{
-  
+    text-overflow: ellipsis;
     font-size: 15px;
 }
 .somme{
-    padding-left: 70px;
+    padding-left: 15px;
     font-weight: bold;
 }
