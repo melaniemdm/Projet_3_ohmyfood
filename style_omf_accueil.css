@@ -374,7 +374,7 @@ body {
           box-shadow: 10px 10px 10px #e2e2e2;
   border-radius: 20px 20px 20px 20px;
   height: 250px;
-  width: 330px;
+  width: auto;
   margin-left: 20px;
   margin-bottom: 20px;
 }
