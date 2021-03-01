@@ -77,13 +77,6 @@ html, body {
   width: auto;
 }
 
-@media only screen and (min-width: 768px) {
-  /* page pour divers ecran */
-  #bloc_page {
-    margin: auto;
-  }
-}
-
 /* mise en page du logo*/
 #logo {
   display: -webkit-box;
@@ -103,12 +96,6 @@ html, body {
 }
 
 /* vue divers ecran*/
-@media only screen and (min-width: 768px) {
-  #logo {
-    display: block;
-  }
-}
-
 /*---------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------          ----------------------------------------------------*/
 /*-------------------------------------------  ------------------------------------------------------------*/

@@ -89,11 +89,7 @@ $omf_background-image_delice:url("./images/restaurants/louis-hansel-shotsoflouis
 #bloc_page {  /* vue mobile*/
   width: auto;
 }
-@media #{$medium-up} {     /* page pour divers ecran */
-  #bloc_page {
-    margin: auto;
-  }
- }
+
                           /* mise en page du logo*/
 #logo {
   display: flex;
@@ -109,12 +105,7 @@ $omf_background-image_delice:url("./images/restaurants/louis-hansel-shotsoflouis
 }
 
                                 /* vue divers ecran*/
-@media #{$medium-up} {
-  
-#logo {
-  display: block;
- }
-}
+
  /*---------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------          ----------------------------------------------------*/
 /*-------------------------------------------  ------------------------------------------------------------*/
