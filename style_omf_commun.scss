@@ -36,13 +36,13 @@ $omf_background-image_delice:url("./images/restaurants/louis-hansel-shotsoflouis
   border-radius: 10px 10px 0px 0px;
   height: 175px;
   background-position: center;
-  background-size: cover; /* taille du backgroung couvre tout*/
+  background-size: cover;                  /* taille du backgroung couvre tout*/
 }
 
 .photo_gout {                                  /* Déclaration pour la taille et position des photos */
   background-image: $omf_background-image_gout;
   @extend %photo_accueil_taille;
-  }
+    }
 .photo_enchante{
   background-image: $omf_background-image_enchante;
   @extend %photo_accueil_taille;

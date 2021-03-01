@@ -380,6 +380,11 @@ body {
   margin-bottom: 20px;
 }
 
+.card_restaurants a {
+  /* retire la deco de new*/
+  text-decoration: none;
+}
+
 .info_resto {
   font-size: 18px;
   margin-left: 15px;
@@ -439,10 +444,29 @@ body {
           box-shadow: 2px 2px 5px #757373;
   background-color: #99e2d0;
   font-weight: bold;
-  display: inline-block;
-  margin-left: 240px;
-  margin-top: 10px;
-  padding: 5px 10px 5px 10px;
+  width: 80px;
+  height: 30px;
+  /* Pour centrer les elements*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.photo_gout, .photo_enchante {
+  /*placement new*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 @media only screen and (min-width: 768px) {

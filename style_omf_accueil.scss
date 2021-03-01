@@ -192,6 +192,9 @@ align-items: center;
   width: auto;
   margin-left: 20px;
   margin-bottom: 20px;
+  & a{                               /* retire la deco de new*/
+    text-decoration: none;
+  }
      }
 
 .info_resto{
@@ -241,13 +244,17 @@ align-items: center;
   box-shadow: 2px 2px 5px #757373;
   background-color:$tertiaire ;
   font-weight: bold;
-   display: inline-block;
-  margin-left: 240px;
-  margin-top: 10px;
- 
-  padding: 5px 10px 5px 10px;
+  width: 80px;
+  height: 30px;
+ @include centrer;
+  
 }
-
+.photo_gout, .photo_enchante{   /*placement new*/
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
+  }
 
 
  
