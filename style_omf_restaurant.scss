@@ -41,6 +41,7 @@ body{                   /* 100% de la page*/
 
 .detail_resto{                   /* style du div nom resto et heart*/
     display: flex;
+    justify-content: space-between;    /* place le heart et le titre*/
     padding-top: 30px;
     background-color: $background-color-grey;
     height: 100px;
@@ -54,14 +55,13 @@ body{                   /* 100% de la page*/
     font-weight: 550;
     margin-left: 20px;
     padding-right: 10%;
+
 }
-@media #{$medium-up} {                               /*vue divers ecran*/
-    .nom_restaurant{
-        padding-right: 76%;
-    }
-}
+
+
 .heart_open{               /* Heart dans la carte du restaurant*/
     padding-top:5px;
+    margin-right: 35px;
     font-size: 25px;
    text-align: right;
    color: rgb(119, 117, 117);
