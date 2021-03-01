@@ -251,10 +251,10 @@ align-items: center;
  
 @media #{$medium-up} {                          /* vue mobile map*/
   .cards_restaurants{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: auto;
     }
   }
 
