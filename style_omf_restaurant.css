@@ -212,6 +212,12 @@ body {
   color: #777575;
 }
 
+@media only screen and (min-width: 768px) {
+  .heart_open {
+    margin-right: 70px;
+  }
+}
+
 .cards_menu {
   background-color: #f6f5f5;
   margin-top: -30px;
@@ -277,6 +283,19 @@ body {
 
 .somme {
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .somme {
+    margin-right: 45px;
+  }
 }
 
 .commander {
