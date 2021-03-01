@@ -112,10 +112,12 @@ align-items: center;
       font-weight: bold;
       width: auto;
       display: flex;
-         gap: 20px;
+         gap: 15px;
       .icon_fonctionnement{
        color: #ccc5c5;
        font-size: 20px;
+       width: 25px;
+       @include centrer;
      }
       &:hover{
        background: rgba($primaire,0.1);
