@@ -75,7 +75,30 @@ body{                   /* 100% de la page*/
     background-color: $background-color-grey;
     margin-top: -30px;
     height: 330px;
-}
+  
+   
+    .carre_rouge{
+         margin-top: -80px;
+          position:absolute;
+          right: 1px;
+          background-color: coral;
+          height: 65px;
+          width: 67px;
+          transform: scale(0.1);
+          transition: transform 330ms ease-in-out;
+          overflow: hidden;
+          border-radius: 15px;
+          .check_circle{
+              @include centrer;
+              padding-top: 18px;
+              font-size: 20px;
+              color: cyan;
+          }
+          } 
+        }
+    
+
+
 .titre{                    /* Entrées, plats, desserts*/
     font-size: 17px;
     font-weight: lighter;
@@ -105,6 +128,18 @@ body{                   /* 100% de la page*/
     margin-bottom: 15px;
     padding-left: 3%;
     box-shadow: 2px 2px 5px 5px #e2e2e2;
+    
+    }
+
+.card_menu {
+    &:hover + .carre_rouge  {
+        margin-right: 10px;
+        background-color: blue;
+        transform: scale(1);
+        }
+        &:hover .somme{
+            padding-right: 50px;
+        }
 }
 @media #{$medium-up} {                               /*vue divers ecran*/
     .card_menu{
@@ -157,3 +192,4 @@ margin-top: -9px
   .desserts{
       margin-top: 20px;
   }
+  

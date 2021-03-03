@@ -229,6 +229,38 @@ body {
   height: 330px;
 }
 
+.cards_menu .carre_rouge {
+  margin-top: -80px;
+  position: absolute;
+  right: 1px;
+  background-color: coral;
+  height: 65px;
+  width: 67px;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.cards_menu .carre_rouge .check_circle {
+  /* Pour centrer les elements*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 18px;
+  font-size: 20px;
+  color: cyan;
+}
+
 .titre {
   /* Entrées, plats, desserts*/
   font-size: 17px;
@@ -265,6 +297,17 @@ body {
   padding-left: 3%;
   -webkit-box-shadow: 2px 2px 5px 5px #e2e2e2;
           box-shadow: 2px 2px 5px 5px #e2e2e2;
+}
+
+.card_menu:hover + .carre_rouge {
+  margin-right: 10px;
+  background-color: blue;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.card_menu:hover .somme {
+  padding-right: 50px;
 }
 
 @media only screen and (min-width: 768px) {
