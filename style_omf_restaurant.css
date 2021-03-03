@@ -261,6 +261,32 @@ body {
   color: cyan;
 }
 
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 1;
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 1;
+  }
+}
+
 .titre {
   /* Entrées, plats, desserts*/
   font-size: 17px;
@@ -300,10 +326,11 @@ body {
 }
 
 .card_menu:hover + .carre_rouge {
-  margin-right: 10px;
   background-color: blue;
   -webkit-transform: scale(1);
           transform: scale(1);
+  -webkit-animation: anim 1s forwards;
+          animation: anim 1s forwards;
 }
 
 .card_menu:hover .somme {

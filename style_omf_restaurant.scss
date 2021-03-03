@@ -93,10 +93,21 @@ body{                   /* 100% de la page*/
               padding-top: 18px;
               font-size: 20px;
               color: cyan;
+            
           }
           } 
         }
-    
+       
+ @keyframes anim{
+     0%{
+         transform: translateX(0);
+         opacity: 1;
+     }
+     100%{
+        transform: translateX(-10px);
+        opacity: 1;
+     }
+ }   
 
 
 .titre{                    /* Entrées, plats, desserts*/
@@ -133,14 +144,15 @@ body{                   /* 100% de la page*/
 
 .card_menu {
     &:hover + .carre_rouge  {
-        margin-right: 10px;
         background-color: blue;
         transform: scale(1);
+        animation: anim 1s forwards;
         }
         &:hover .somme{
             padding-right: 50px;
         }
-}
+       }
+          
 @media #{$medium-up} {                               /*vue divers ecran*/
     .card_menu{
     grid-template-columns: 20fr 1fr;
