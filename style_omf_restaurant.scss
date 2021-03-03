@@ -87,7 +87,7 @@ body{                   /* 100% de la page*/
           transform: scale(0.1);
           transition: transform 330ms ease-in-out;
           overflow: hidden;
-          border-radius: 15px;
+          border-radius: 0  15px 15px 0;
           .check_circle{
               @include centrer;
               padding-top: 18px;
