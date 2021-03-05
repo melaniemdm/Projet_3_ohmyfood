@@ -109,11 +109,11 @@ body{                   /* 100% de la page*/
     padding-left: 3%;
     box-shadow: 2px 2px 5px 5px #e2e2e2;
     cursor: pointer;
-    overflow: hidden;
+    overflow: hidden;                        /*disparition du carre et du cercle pour l'animation*/
    
         }
 
-        .carre{
+        .carre{                            /*création ddu carré pour l'animation*/
             position: absolute;
     background-color: $tertiaire;
     height: 67px;
@@ -123,12 +123,12 @@ body{                   /* 100% de la page*/
     transition: all 1s linear;
 }
 .card_menu:hover .somme{
-            padding-right: 20px;
+            padding-right: 40px;
                }
-.card_menu:hover .carre{
+.card_menu:hover .carre{        /*animation cercle*/
     right: 0;
      }
-.check_circle{
+.check_circle{                  /*création du cercle pour l'animation*/
     color: white;
     position: absolute;
     top: 20px;
@@ -136,7 +136,7 @@ body{                   /* 100% de la page*/
     font-size: 20px;
     transform: rotate(90deg);
 }
-.card_menu:hover .check_circle{
+.card_menu:hover .check_circle{              /*animation cercle*/
     transform: rotate(-10deg);
     transition: all 1s linear;
      }

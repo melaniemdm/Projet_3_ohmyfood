@@ -268,9 +268,11 @@ body {
           box-shadow: 2px 2px 5px 5px #e2e2e2;
   cursor: pointer;
   overflow: hidden;
+  /*disparition du carre et du cercle pour l'animation*/
 }
 
 .carre {
+  /*création ddu carré pour l'animation*/
   position: absolute;
   background-color: #99e2d0;
   height: 67px;
@@ -282,14 +284,16 @@ body {
 }
 
 .card_menu:hover .somme {
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .card_menu:hover .carre {
+  /*animation cercle*/
   right: 0;
 }
 
 .check_circle {
+  /*création du cercle pour l'animation*/
   color: white;
   position: absolute;
   top: 20px;
@@ -300,6 +304,7 @@ body {
 }
 
 .card_menu:hover .check_circle {
+  /*animation cercle*/
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
   -webkit-transition: all 1s linear;
