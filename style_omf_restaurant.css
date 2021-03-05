@@ -268,7 +268,29 @@ body {
           box-shadow: 2px 2px 5px 5px #e2e2e2;
   cursor: pointer;
   overflow: hidden;
+  -webkit-animation: apparait 3s ease-in;
+          animation: apparait 3s ease-in;
   /*disparition du carre et du cercle pour l'animation*/
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+@-webkit-keyframes apparait {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apparait {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .carre {

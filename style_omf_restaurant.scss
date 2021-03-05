@@ -109,9 +109,20 @@ body{                   /* 100% de la page*/
     padding-left: 3%;
     box-shadow: 2px 2px 5px 5px #e2e2e2;
     cursor: pointer;
-    overflow: hidden;                        /*disparition du carre et du cercle pour l'animation*/
-   
-        }
+    overflow: hidden;    
+ animation: apparait 3s ease-in;                  /*disparition du carre et du cercle pour l'animation*/
+ transition-delay: 0.5s;
+ }
+
+@keyframes apparait{
+    from{
+        opacity: 0;
+        
+    }
+    to{
+    opacity: 1;
+   }
+}
 
         .carre{                            /*création ddu carré pour l'animation*/
             position: absolute;
