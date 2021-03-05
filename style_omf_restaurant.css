@@ -305,10 +305,12 @@ body {
 
 .card_menu:hover .check_circle {
   /*animation cercle*/
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
 @media only screen and (min-width: 768px) {
