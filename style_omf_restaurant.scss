@@ -110,16 +110,19 @@ body{                   /* 100% de la page*/
     box-shadow: 2px 2px 5px 5px #e2e2e2;
     cursor: pointer;
     overflow: hidden;    
- animation: apparait 3s ease-in;                  /*disparition du carre et du cercle pour l'animation*/
- transition-delay: 2s;
+ animation: apparait 2s linear;                  /*disparition animation*/
+ 
  }
 
 @keyframes apparait{
-    from{
+    0%{
+        transform: translate(0,20px);
         opacity: 0;
-        
+        }
+    50%{
+        opacity: 0.5;
     }
-    to{
+    100%{
     opacity: 1;
    }
 }

@@ -268,27 +268,35 @@ body {
           box-shadow: 2px 2px 5px 5px #e2e2e2;
   cursor: pointer;
   overflow: hidden;
-  -webkit-animation: apparait 3s ease-in;
-          animation: apparait 3s ease-in;
-  /*disparition du carre et du cercle pour l'animation*/
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
+  -webkit-animation: apparait 2s linear;
+          animation: apparait 2s linear;
+  /*disparition animation*/
 }
 
 @-webkit-keyframes apparait {
-  from {
+  0% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
     opacity: 0;
   }
-  to {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
   }
 }
 
 @keyframes apparait {
-  from {
+  0% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
     opacity: 0;
   }
-  to {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
   }
 }
