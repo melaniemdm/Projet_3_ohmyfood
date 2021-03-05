@@ -250,7 +250,7 @@ body {
   margin-bottom: 15px;
 }
 
-.card_menu {
+.card_menu, .card_menu1, .card_menu2, .card_menu3, .card_menu4 {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -272,16 +272,36 @@ body {
           box-shadow: 2px 2px 5px 5px #e2e2e2;
   cursor: pointer;
   overflow: hidden;
-  -webkit-animation: apparait 2s linear;
-          animation: apparait 2s linear;
+  -webkit-animation: apparait 2s linear forwards;
+          animation: apparait 2s linear forwards;
   /*disparition animation*/
+  opacity: 0;
+}
+
+.card_menu1 {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+.card_menu2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.card_menu3 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.card_menu4 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 @-webkit-keyframes apparait {
   0% {
     -webkit-transform: translate(0, 20px);
             transform: translate(0, 20px);
-    opacity: 0;
   }
   50% {
     opacity: 0.5;
@@ -295,7 +315,6 @@ body {
   0% {
     -webkit-transform: translate(0, 20px);
             transform: translate(0, 20px);
-    opacity: 0;
   }
   50% {
     opacity: 0.5;
@@ -317,13 +336,13 @@ body {
   transition: all 1s linear;
 }
 
-.card_menu:hover .somme {
+.card_menu:hover .somme, .card_menu1:hover .somme, .card_menu2:hover .somme, .card_menu3:hover .somme, .card_menu4:hover .somme {
   padding-right: 50px;
   -webkit-transition: 1s linear;
   transition: 1s linear;
 }
 
-.card_menu:hover .carre {
+.card_menu:hover .carre, .card_menu1:hover .carre, .card_menu2:hover .carre, .card_menu3:hover .carre, .card_menu4:hover .carre {
   /*animation cercle*/
   right: 0;
 }
@@ -339,7 +358,7 @@ body {
           transform: rotate(90deg);
 }
 
-.card_menu:hover .check_circle {
+.card_menu:hover .check_circle, .card_menu1:hover .check_circle, .card_menu2:hover .check_circle, .card_menu3:hover .check_circle, .card_menu4:hover .check_circle {
   /*animation cercle*/
   -webkit-transform: rotate(0);
           transform: rotate(0);
@@ -351,7 +370,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   /*vue divers ecran*/
-  .card_menu {
+  .card_menu, .card_menu1, .card_menu2, .card_menu3, .card_menu4 {
     -ms-grid-columns: 20fr 1fr;
         grid-template-columns: 20fr 1fr;
   }

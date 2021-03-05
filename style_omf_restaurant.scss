@@ -110,15 +110,29 @@ body{                   /* 100% de la page*/
     box-shadow: 2px 2px 5px 5px #e2e2e2;
     cursor: pointer;
     overflow: hidden;    
- animation: apparait 2s linear;                  /*disparition animation*/
- 
+ animation: apparait 2s linear forwards;                  /*disparition animation*/
+ opacity: 0;
  }
-
+.card_menu1{
+    @extend .card_menu;
+    animation-delay: 0;
+}
+.card_menu2{
+    @extend .card_menu;
+    animation-delay: 0.3s;
+}
+.card_menu3{
+    @extend .card_menu;
+    animation-delay: 0.6s;
+}
+.card_menu4{
+    @extend .card_menu;
+    animation-delay: 0.9s;
+}
 @keyframes apparait{
     0%{
         transform: translate(0,20px);
-        opacity: 0;
-        }
+               }
     50%{
         opacity: 0.5;
     }
