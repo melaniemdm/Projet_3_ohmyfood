@@ -44,8 +44,8 @@ body{                   /* 100% de la page*/
     justify-content: space-between;    /* place le heart et le titre*/
     padding-top: 30px;
     background-color: $background-color-grey;
-    height: 100px;
-    border-radius: 30px;
+    height: 70px;
+    border-radius:  30px 30px 0 0;
     margin-top: -50px;
 }
 
@@ -73,8 +73,8 @@ body{                   /* 100% de la page*/
 
 .cards_menu{
     background-color: $background-color-grey;
-    margin-top: -30px;
-    height: 330px;
+    min-height: 330px;
+    
 }
    
    
