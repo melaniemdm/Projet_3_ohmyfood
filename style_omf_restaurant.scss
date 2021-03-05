@@ -137,7 +137,8 @@ body{                   /* 100% de la page*/
     transition: all 1s linear;
 }
 .card_menu:hover .somme{
-            padding-right: 40px;
+            padding-right: 50px;
+            transition-duration: 1.5s;
                }
 .card_menu:hover .carre{        /*animation cercle*/
     right: 0;
