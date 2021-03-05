@@ -162,9 +162,15 @@ body{                   /* 100% de la page*/
     grid-column: 1/span2;
     padding-top: 10px;
     font-weight: bold;
+    text-overflow: ellipsis;  /*disparition du texte et points de suspensions*/
+    white-space: nowrap;
+    overflow: hidden;
 }
 .detail_entree{
     font-size: 15px;
+    text-overflow: ellipsis;  /*disparition du texte et points de suspentions*/
+    white-space: nowrap;
+    overflow: hidden;
 }
 .somme{
     font-weight: bold;
