@@ -492,9 +492,9 @@ body {
 
 .loading {
   /* création du loader*/
-  border: 30px solid #f3f3f3;
-  border-top: 30px solid #e74c3c;
-  border-bottom: 30px solid #2980b9;
+  border: 30px solid #ff79da;
+  border-top: 30px solid #99e2d0;
+  border-bottom: 30px solid #9353dc;
   width: 200px;
   height: 200px;
   border-radius: 50%;
