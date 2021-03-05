@@ -229,64 +229,6 @@ body {
   height: 330px;
 }
 
-.cards_menu .carre_rouge {
-  margin-top: -80px;
-  position: absolute;
-  right: 1px;
-  background-color: coral;
-  height: 65px;
-  width: 67px;
-  -webkit-transform: scale(0.1);
-          transform: scale(0.1);
-  -webkit-transition: -webkit-transform 330ms ease-in-out;
-  transition: -webkit-transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
-  overflow: hidden;
-  border-radius: 0  15px 15px 0;
-}
-
-.cards_menu .carre_rouge .check_circle {
-  /* Pour centrer les elements*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 18px;
-  font-size: 20px;
-  color: cyan;
-}
-
-@-webkit-keyframes anim {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-    opacity: 1;
-  }
-}
-
-@keyframes anim {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-    opacity: 1;
-  }
-}
-
 .titre {
   /* Entrées, plats, desserts*/
   font-size: 17px;
@@ -305,6 +247,7 @@ body {
 }
 
 .card_menu {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 7fr 1fr;
@@ -323,18 +266,44 @@ body {
   padding-left: 3%;
   -webkit-box-shadow: 2px 2px 5px 5px #e2e2e2;
           box-shadow: 2px 2px 5px 5px #e2e2e2;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.card_menu:hover + .carre_rouge {
-  background-color: blue;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-animation: anim 1s forwards;
-          animation: anim 1s forwards;
+.carre {
+  position: absolute;
+  background-color: green;
+  height: 67px;
+  width: 60px;
+  right: -60px;
+  border-radius: 0px 10px 10px 0px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .card_menu:hover .somme {
-  padding-right: 50px;
+  padding-right: 20px;
+}
+
+.card_menu:hover .carre {
+  right: 0;
+}
+
+.check_circle {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-size: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.card_menu:hover .check_circle {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 @media only screen and (min-width: 768px) {
