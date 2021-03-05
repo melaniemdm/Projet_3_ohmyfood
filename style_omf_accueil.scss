@@ -122,6 +122,7 @@ align-items: center;
       &:hover{
        background: rgba($primaire,0.1);
        color: $primaire;
+       box-shadow: 5px 10px 7px rgb(161, 159, 159);
        .icon_fonctionnement{
          color: $primaire;
      }}

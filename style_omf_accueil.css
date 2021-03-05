@@ -293,6 +293,8 @@ body {
 .card_fonctionnement:hover {
   background: rgba(147, 83, 220, 0.1);
   color: #9353dc;
+  -webkit-box-shadow: 5px 10px 7px #a19f9f;
+          box-shadow: 5px 10px 7px #a19f9f;
 }
 
 .card_fonctionnement:hover .icon_fonctionnement {
