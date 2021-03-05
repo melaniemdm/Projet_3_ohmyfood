@@ -111,7 +111,7 @@ body{                   /* 100% de la page*/
     cursor: pointer;
     overflow: hidden;    
  animation: apparait 3s ease-in;                  /*disparition du carre et du cercle pour l'animation*/
- transition-delay: 0.5s;
+ transition-delay: 2s;
  }
 
 @keyframes apparait{
@@ -192,14 +192,7 @@ margin-top: -9px
   .menu{
       background-color: $background-color-grey;
   } 
-  .entrees {
-      margin-bottom: 25%;
-  }
-  @media #{$medium-up} {                               /*vue divers ecran*/
-    .entrees {
-        margin-bottom: 7%;
-    }
-}
+  
 
   .desserts{
       margin-top: 20px;

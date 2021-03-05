@@ -483,4 +483,51 @@ body {
     width: auto;
   }
 }
+
+.loading {
+  /* création du loader*/
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #e74c3c;
+  border-bottom: 10px solid #2980b9;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: auto;
+  /* placement*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-animation: tourne 1.5s forwards;
+          animation: tourne 1.5s forwards;
+}
+
+/* animation loader*/
+@-webkit-keyframes tourne {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes tourne {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*# sourceMappingURL=style_omf_accueil.css.map */

@@ -271,8 +271,8 @@ body {
   -webkit-animation: apparait 3s ease-in;
           animation: apparait 3s ease-in;
   /*disparition du carre et du cercle pour l'animation*/
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
 }
 
 @-webkit-keyframes apparait {
@@ -391,17 +391,6 @@ body {
 
 .menu {
   background-color: #f6f5f5;
-}
-
-.entrees {
-  margin-bottom: 25%;
-}
-
-@media only screen and (min-width: 768px) {
-  /*vue divers ecran*/
-  .entrees {
-    margin-bottom: 7%;
-  }
 }
 
 .desserts {
