@@ -422,9 +422,9 @@ body {
 
 .heart_close a:focus .fas {
   /*degradé icon heart*/
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-  /*transition*/
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  /*temps de remplissage du coeur*/
   font-size: 25px;
   color: #9353dc;
   background: -webkit-linear-gradient(#9353dc, #ff79da);

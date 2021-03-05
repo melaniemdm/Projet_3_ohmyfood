@@ -223,7 +223,7 @@ align-items: center;
      &:focus{                           /*cliquable icon heart*/
               display: block;
         .fas{                               /*degradé icon heart*/
-          transition: all 150ms ease-out;     /*transition*/
+          transition: all 1.5s ease-out;                /*temps de remplissage du coeur*/
       font-size: $omf_font_size_heart;
       color: $primaire;
       background: -webkit-linear-gradient($primaire, $secondaire);
