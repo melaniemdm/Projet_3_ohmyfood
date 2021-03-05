@@ -74,7 +74,10 @@ $omf_background-image_delice:url("./images/restaurants/louis-hansel-shotsoflouis
     font-size: 16px;
     background: linear-gradient($secondaire, $primaire);
 &:hover{
-      background: linear-gradient($primaire, $secondaire);     
+      background: linear-gradient($primaire, $secondaire);   
+      box-shadow: 5px 10px 7px rgb(161, 159, 159);
+      opacity: 0.8; /*eclairssissement btn*/
+      
     }
   }
 /*---------------------------------------------------------------------------------------------------------*/

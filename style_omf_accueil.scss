@@ -63,10 +63,13 @@ align-items: center;
   font-size: 18px;
   font-weight: light;
 }
+
                              
 .btn_explorez {                           /*bouton explorez*/
   @extend .omf_btn;
+ 
       }
+
 
 /* vue mobile map*/
 @media #{$medium-up} {

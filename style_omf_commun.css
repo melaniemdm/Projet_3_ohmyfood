@@ -62,6 +62,10 @@ html, body {
 .omf_btn:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9353dc), to(#ff79da));
   background: linear-gradient(#9353dc, #ff79da);
+  -webkit-box-shadow: 5px 10px 7px #a19f9f;
+          box-shadow: 5px 10px 7px #a19f9f;
+  opacity: 0.8;
+  /*eclairssissement btn*/
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
