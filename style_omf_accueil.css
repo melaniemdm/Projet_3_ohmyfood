@@ -158,7 +158,7 @@ body {
 .map {
   height: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#c7c6c6), color-stop(10%, #ebe5e5));
-  background: linear-gradient(#c7c6c6, #ebe5e5 10% 0.8);
+  background: linear-gradient(#c7c6c6, #ebe5e5 10%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +223,7 @@ body {
   margin-right: 25px;
   margin-left: 25px;
   font-size: 18px;
-  font-weight: light;
+  font-weight: normal;
 }
 
 .btn_explorez {
@@ -467,8 +467,7 @@ body {
           align-items: center;
 }
 
-.photo_gout,
-.photo_enchante {
+.photo_gout, .photo_enchante {
   /*placement new*/
   display: -webkit-box;
   display: -ms-flexbox;
