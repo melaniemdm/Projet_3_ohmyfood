@@ -23,4 +23,4 @@ En plus d'un systeme classique de reservation, les clients pourront composer le 
 
 ## Lien gitHub pages
 
-lien : [lien vers gitHub pages](https://melaniemdm.github.io/#projet_3_ohmyfood)
+lien : [lien vers gitHub pages](https://melaniemdm.github.io/#projet-ohmyfood)
