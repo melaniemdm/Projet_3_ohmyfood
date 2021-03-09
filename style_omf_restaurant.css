@@ -287,8 +287,8 @@ h4 {
 }
 
 .card_menu1 {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-delay: 0.01s;
+          animation-delay: 0.01s;
 }
 
 .card_menu2 {
