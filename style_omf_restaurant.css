@@ -362,8 +362,8 @@ h4 {
   top: 20px;
   left: 25px;
   font-size: 20px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .card_menu:hover .check_circle, .card_menu1:hover .check_circle, .card_menu2:hover .check_circle, .card_menu3:hover .check_circle, .card_menu4:hover .check_circle {
