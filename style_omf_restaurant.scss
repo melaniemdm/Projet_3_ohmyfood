@@ -1,229 +1,243 @@
-@import "./style_omf_commun.scss";                             /* style commun a toutes les pages*/
+@import "./style_omf_commun.scss"; /* style commun a toutes les pages*/
 
-
-body{                   /* 100% de la page*/
-    width: auto;
-    font-family: $omf_text_font;
-}
-
-.fleche i {                      /* positionnement de la flèche*/
-    padding-top: 25px;
-    margin-left: -70px;
-    align-content: center;
-    font-size: 20px;
-    }
-    .fleche a{
-        color: black;
-    }
-
-%photo_position{                  /* Pour positionner les photos*/
-    border-radius: 0;
-    width: 100%;
-    height: 271px;
+body {
+  /* 100% de la page*/
+  width: auto;
+  font-family: $omf_text_font;
 }
 
-.photo_gout{                           /* photo du restaurant*/
-    background-image: $omf_background-image_gout;
-    @extend %photo_position;
-    }
-.photo_enchante{                           /* photo du restaurant*/
-    background-image: $omf_background-image_enchante;
-    @extend %photo_position;
+.fleche i {
+  /* positionnement de la flèche*/
+  padding-top: 25px;
+  margin-left: -70px;
+  align-content: center;
+  font-size: 20px;
 }
-.photo_delice_sens{                           /* photo du restaurant*/
-    background-image: $omf_background-image_delice;
-    @extend %photo_position;
-}
-.photo_ala_fr{                           /* photo du restaurant*/
-    background-image: $omf_background-image_francaise;
-    @extend %photo_position;
+.fleche a {
+  color: black;
 }
 
-.detail_resto{                   /* style du div nom resto et heart*/
-    display: flex;
-    justify-content: space-between;    /* place le heart et le titre*/
-    padding-top: 30px;
-    background-color: $background-color-grey;
-    height: 70px;
-    border-radius:  30px 30px 0 0;
-    margin-top: -50px;
+%photo_position {
+  /* Pour positionner les photos*/
+  border-radius: 0;
+  width: 100%;
+  height: 271px;
 }
 
-.nom_restaurant{                 /* nom du restaurant dans sa page*/
-    font-family: $omf_title_font;
-    font-size: 27px;
-   
-    margin-left: 20px;
-    padding-right: 10%;
-
+.photo_gout {
+  /* photo du restaurant*/
+  background-image: $omf_background-image_gout;
+  @extend %photo_position;
 }
-h4{    /* titre des restaurants*/
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-weight: normal;
+.photo_enchante {
+  /* photo du restaurant*/
+  background-image: $omf_background-image_enchante;
+  @extend %photo_position;
 }
-
-.heart_open{               /* Heart dans la carte du restaurant*/
-    padding-top:5px;
-    margin-right: 35px;
-    font-size: 25px;
-   text-align: right;
-   color: rgb(119, 117, 117);
+.photo_delice_sens {
+  /* photo du restaurant*/
+  background-image: $omf_background-image_delice;
+  @extend %photo_position;
 }
-@media #{$medium-up} { 
-    .heart_open{              
-         margin-right: 70px;
-}}
-
-.cards_menu{
-    background-color: $background-color-grey;
-    min-height: 330px;
-    
-}
-   
-   
-.titre{                    /* Entrées, plats, desserts*/
-    font-size: 17px;
-    font-weight: lighter;
-    padding-left: 17px;
-    background-color: $background-color-grey;
-}
-.separateur{
-    background-color: $tertiaire;
-    height: 3px;
-    width: 45px;
-    margin-left: 17px;
-    margin-top: 5px ;
-    margin-bottom: 15px;
+.photo_ala_fr {
+  /* photo du restaurant*/
+  background-image: $omf_background-image_francaise;
+  @extend %photo_position;
 }
 
-.card_menu{
-    position: relative;
-    display: grid;
-    grid-template-columns: 7fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 15px;
-    border-radius: 15px;
-    background-color: rgb(250, 247, 246);
-    align-content: center;
-    width: auto;
-    margin-left: 15px;
-    margin-right: 14px;
-    margin-bottom: 15px;
-    padding-left: 3%;
-    box-shadow: 2px 2px 5px 5px #e2e2e2;
-    cursor: pointer;
-    overflow: hidden;    
- animation: apparait 2s linear forwards;                  /*disparition animation*/
- opacity: 0;
- }
-.card_menu1{
-    @extend .card_menu;
-    animation-delay: 0;
-}
-.card_menu2{
-    @extend .card_menu;
-    animation-delay: 0.3s;
-}
-.card_menu3{
-    @extend .card_menu;
-    animation-delay: 0.6s;
-}
-.card_menu4{
-    @extend .card_menu;
-    animation-delay: 0.9s;
-}
-@keyframes apparait{
-    0%{
-        transform: translate(0,20px);
-               }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-    opacity: 1;
-   }
+.detail_resto {
+  /* style du div nom resto et heart*/
+  display: flex;
+  justify-content: space-between; /* place le heart et le titre*/
+  padding-top: 30px;
+  background-color: $background-color-grey;
+  height: 70px;
+  border-radius: 30px 30px 0 0;
+  margin-top: -50px;
 }
 
-        .carre{                            /*création ddu carré pour l'animation*/
-            position: absolute;
-    background-color: $tertiaire;
-    height: 67px;
-    width: 60px;
-    right: -60px;
-    border-radius: 0px 10px 10px 0px ;
-    transition: all 1s linear;
-}
-.card_menu:hover .somme{
-            padding-right: 50px;
-            transition: 1s linear;
-               }
-.card_menu:hover .carre{        /*animation cercle*/
-    right: 0;
-     }
-.check_circle{                  /*création du cercle pour l'animation*/
-    color: white;
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    font-size: 20px;
-    transform: rotate(90deg);
-}
-.card_menu:hover .check_circle{              /*animation cercle*/
-    transform: rotate(0);
-    transition: all 0.5s linear;
-    transition-delay: 0.5s;
-     }
-          
-@media #{$medium-up} {                               /*vue divers ecran*/
-    .card_menu{
-    grid-template-columns: 20fr 1fr;
-}}
-.titre_entree{
-    font-size: 19px;
-    grid-column: 1/span2;
-    padding-top: 10px;
-    font-weight: bold;
-    text-overflow: ellipsis;  /*disparition du texte et points de suspensions*/
-    white-space: nowrap;
-    overflow: hidden;
-}
-.detail_entree{
-    font-size: 15px;
-    text-overflow: ellipsis;  /*disparition du texte et points de suspentions*/
-    white-space: nowrap;
-    overflow: hidden;
-}
-.somme{
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5px;
-}
-@media #{$medium-up} { 
-    .somme{              
-        margin-right: 45px;
-}}
+.nom_restaurant {
+  /* nom du restaurant dans sa page*/
+  font-family: $omf_title_font;
+  font-size: 27px;
 
-.commander{
-    background-color: $background-color-grey;
-    display: flex;
-align-content: center;
-justify-content: center;
-padding-bottom: 65px;
-margin-top: -9px
+  margin-left: 20px;
+  padding-right: 10%;
 }
-.btn_commande{
-    @extend .omf_btn;
-    width: 180px ;
-   }
-  .menu{
-      background-color: $background-color-grey;
-  } 
-  
+h4 {
+  /* titre des restaurants*/
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: normal;
+}
 
-  .desserts{
-      margin-top: 20px;
+.heart_open {
+  /* Heart dans la carte du restaurant*/
+  padding-top: 5px;
+  margin-right: 35px;
+  font-size: 25px;
+  text-align: right;
+  color: rgb(119, 117, 117);
+}
+@media #{$medium-up} {
+  .heart_open {
+    margin-right: 70px;
   }
-  
+}
+
+.cards_menu {
+  background-color: $background-color-grey;
+  min-height: 330px;
+}
+
+.titre {
+  /* Entrées, plats, desserts*/
+  font-size: 17px;
+  font-weight: lighter;
+  padding-left: 17px;
+  background-color: $background-color-grey;
+}
+.separateur {
+  background-color: $tertiaire;
+  height: 3px;
+  width: 45px;
+  margin-left: 17px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.card_menu {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 15px;
+  border-radius: 15px;
+  background-color: rgb(250, 247, 246);
+  align-content: center;
+  width: auto;
+  margin-left: 15px;
+  margin-right: 14px;
+  margin-bottom: 15px;
+  padding-left: 3%;
+  box-shadow: 2px 2px 5px 5px #e2e2e2;
+  cursor: pointer;
+  overflow: hidden;
+  animation: apparait 2s linear forwards; /*disparition animation*/
+  opacity: 0;
+}
+.card_menu1 {
+  @extend .card_menu;
+  animation-delay: 0;
+}
+.card_menu2 {
+  @extend .card_menu;
+  animation-delay: 0.3s;
+}
+.card_menu3 {
+  @extend .card_menu;
+  animation-delay: 0.6s;
+}
+.card_menu4 {
+  @extend .card_menu;
+  animation-delay: 0.9s;
+}
+@keyframes apparait {
+  0% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carre {
+  /*création ddu carré pour l'animation*/
+  position: absolute;
+  background-color: $tertiaire;
+  height: 67px;
+  width: 60px;
+  right: -60px;
+  border-radius: 0px 10px 10px 0px;
+  transition: all 1s linear;
+}
+.card_menu:hover .somme {
+  padding-right: 50px;
+  transition: 1s linear;
+}
+.card_menu:hover .carre {
+  /*animation cercle*/
+  right: 0;
+}
+.check_circle {
+  /*création du cercle pour l'animation*/
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-size: 20px;
+  transform: rotate(90deg);
+}
+.card_menu:hover .check_circle {
+  /*animation cercle*/
+  transform: rotate(0);
+  transition: all 0.5s linear;
+  transition-delay: 0.5s;
+}
+
+@media #{$medium-up} {
+  /*vue divers ecran*/
+  .card_menu {
+    grid-template-columns: 20fr 1fr;
+  }
+}
+.titre_entree {
+  font-size: 19px;
+  grid-column: 1 / span2;
+  padding-top: 10px;
+  font-weight: bold;
+  text-overflow: ellipsis; /*disparition du texte et points de suspensions*/
+  white-space: nowrap;
+  overflow: hidden;
+}
+.detail_entree {
+  font-size: 15px;
+  text-overflow: ellipsis; /*disparition du texte et points de suspentions*/
+  white-space: nowrap;
+  overflow: hidden;
+}
+.somme {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+@media #{$medium-up} {
+  .somme {
+    margin-right: 45px;
+  }
+}
+
+.commander {
+  background-color: $background-color-grey;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 65px;
+  margin-top: -9px;
+}
+.btn_commande {
+  @extend .omf_btn;
+  width: 180px;
+}
+.menu {
+  background-color: $background-color-grey;
+}
+
+.desserts {
+  margin-top: 20px;
+}
