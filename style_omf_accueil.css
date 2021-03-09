@@ -436,7 +436,6 @@ body {
   font-size: 25px;
   color: #9353dc;
   background: -webkit-linear-gradient(#9353dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }

@@ -231,8 +231,7 @@ align-items: center;
       font-size: $omf_font_size_heart;
       color: $primaire;
       background: -webkit-linear-gradient($primaire, $secondaire);
-     background-clip: text;
--webkit-background-clip: text;
+  -webkit-background-clip: text;
 color: transparent;
       }
       }
