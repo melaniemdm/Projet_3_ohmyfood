@@ -31,11 +31,11 @@ body{                   /* 100% de la page*/
     @extend %photo_position;
 }
 .photo_delice_sens{                           /* photo du restaurant*/
-    background-image: $omf_background-image_enchante;
+    background-image: $omf_background-image_delice;
     @extend %photo_position;
 }
 .photo_ala_fr{                           /* photo du restaurant*/
-    background-image: $omf_background-image_enchante;
+    background-image: $omf_background-image_francaise;
     @extend %photo_position;
 }
 
@@ -52,12 +52,17 @@ body{                   /* 100% de la page*/
 .nom_restaurant{                 /* nom du restaurant dans sa page*/
     font-family: $omf_title_font;
     font-size: 27px;
-    font-weight: 550;
+   
     margin-left: 20px;
     padding-right: 10%;
 
 }
-
+h4{    /* titre des restaurants*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: normal;
+}
 
 .heart_open{               /* Heart dans la carte du restaurant*/
     padding-top:5px;
