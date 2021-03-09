@@ -3,7 +3,7 @@
 L'objectif est le devellopement en mobile-first qui repertorie les menus de plusieurs retaurants gastronomiques.
 Utilisation de vs-code et du plugin Sass.
 Intégration des nimations demandés dans le Brief.
-Aucune erreur ni alerte au validateur W3C HTML et CSS. 
+Aucune erreur ni alerte au validateur W3C HTML et CSS.
 
 ![Maquette ohmyfood](./capture_omf_readme.png)
 
