@@ -212,27 +212,35 @@ body {
   font-size: $omf_font_size_heart;
   color: #9e9a9a;
 }
-.heart_close a {
+.heart_close {
   color: transparent;
   /*cliquable icon heart*/
   &:focus {
     display: block;
-    .fas {
-      transition: all 1.5s ease-out; /*temps de remplissage du coeur*/
-      font-size: $omf_font_size_heart;
-      color: $primaire;
-      background: -webkit-linear-gradient(
-        $primaire,
-        $secondaire
-      ); /*degradé icon heart*/
-      -webkit-background-clip: text; /* -webkit genere un warning mais est essentiel au fonctionnement du heart*/
-      color: transparent;
-    }
+   
   }
 }
 /*curseur pointer*/
 .icon_heart {
   cursor: pointer;
+  & input{     /* case a coché*/
+    display: none;
+  }
+  & label{
+    cursor: pointer;
+  }
+  & input:checked + label{ /*coche du heart*/
+       .fas{
+    transition: all 1.5s ease-out; /*temps de remplissage du coeur*/
+    font-size: $omf_font_size_heart;
+    color: $primaire;
+    background: -webkit-linear-gradient(
+      $primaire,
+      $secondaire
+    ); /*degradé icon heart*/
+    -webkit-background-clip: text; /* -webkit genere un warning mais est essentiel au fonctionnement du heart*/
+    color: transparent;
+  }}
 }
 .new {
   border-radius: 2px;

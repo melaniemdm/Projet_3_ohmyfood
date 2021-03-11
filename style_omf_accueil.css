@@ -434,16 +434,34 @@ body {
   color: #9e9a9a;
 }
 
-.heart_close a {
+.heart_close {
   color: transparent;
   /*cliquable icon heart*/
 }
 
-.heart_close a:focus {
+.heart_close:focus {
   display: block;
 }
 
-.heart_close a:focus .fas {
+/*curseur pointer*/
+.icon_heart {
+  cursor: pointer;
+}
+
+.icon_heart input {
+  /* case a coché*/
+  display: none;
+}
+
+.icon_heart label {
+  cursor: pointer;
+}
+
+.icon_heart input:checked + label {
+  /*coche du heart*/
+}
+
+.icon_heart input:checked + label .fas {
   -webkit-transition: all 1.5s ease-out;
   transition: all 1.5s ease-out;
   /*temps de remplissage du coeur*/
@@ -454,11 +472,6 @@ body {
   -webkit-background-clip: text;
   /* -webkit genere un warning mais est essentiel au fonctionnement du heart*/
   color: transparent;
-}
-
-/*curseur pointer*/
-.icon_heart {
-  cursor: pointer;
 }
 
 .new {
