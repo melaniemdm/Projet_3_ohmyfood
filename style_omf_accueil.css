@@ -458,7 +458,7 @@ body {
 }
 
 .icon_heart input:checked + label {
-  /*coche du heart*/
+  /*coche du heart, label qui suit le input*/
 }
 
 .icon_heart input:checked + label .fas {

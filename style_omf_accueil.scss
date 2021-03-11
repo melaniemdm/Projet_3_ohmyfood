@@ -229,7 +229,7 @@ body {
   & label{
     cursor: pointer;
   }
-  & input:checked + label{ /*coche du heart*/
+  & input:checked + label{ /*coche du heart, label qui suit le input*/
        .fas{
     transition: all 1.5s ease-out; /*temps de remplissage du coeur*/
     font-size: $omf_font_size_heart;
