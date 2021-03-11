@@ -8,14 +8,14 @@
     <meta charset="utf-8" />
     <!--déclaration au navigateur de l'encodage des caractères speciaux en utf-8-->
 
-    <!--lien vers le fichier scss-->
+    <!--lien vers le fichier css-->
     <link rel="stylesheet" href="style_omf_accueil.css" />
 
     <!--lien vers les icones font awesome-->
     <script src="https://kit.fontawesome.com/08a19f859e.js" crossorigin="anonymous">
     </script>
 
-    <!--demande au navigateur de prendre en compte le type de materiel (mobile, tblette....)-->
+    <!--demande au navigateur de prendre en compte le type de materiel (mobile, tablette....)-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--titre de la page qui s'affiche dans l'onglet-->
@@ -73,20 +73,21 @@
         </div>
 
     </section>
-    <div class="loading"></div>
+    <div class="loading"></div>              <!-- loading spinner-->
     <section class="restaurants">
         <div>
             <h1> Restaurants </h1>
         </div>
         <div class="cards_restaurants">
-
-            <div class="card_restaurants"><a href="la_palette_du_gout.html">
-                    <!--lien vers la page du restaurant-->
-                    <div class="photo_gout">
-                        <div class="new"> Nouveau</div>
+            <!--lien a href vers la page du restaurant-->
+            <div class="card_restaurants"><a href="la_palette_du_gout.html">   
+                     <!--image integrée au css-->
+                    <div class="photo_gout"> 
+                        <div class="new"> Nouveau</div> 
                     </div>
                 </a>
                 <div class="restaurant_detail">
+                     <!--lien a href vers la page du restaurant pour que la photo et le texte soit un lien hors heart-->
                     <a href="la_palette_du_gout.html">
                         <div class="info_resto"> <strong> La palette du goût </strong><br />
                             Ménilmontant</div>
@@ -95,6 +96,7 @@
                         <span class="fa-stack fa">
                             <!--superposition des icones-->
                             <span class="heart_open"><i class="far fa-heart fa-stack-1x"></i></span>
+                            <!--utilisation d'un lien vide js pour mettre le heart en cliquable-->
                             <span class="heart_close"><a href="javascript:void();"><i
                                         class="fas fa-heart fa-stack-1x"></i></a></span>
                         </span>
@@ -175,6 +177,7 @@
         <div class="proposer"> <i class="fas fa-utensils"></i> Proposer un restaurant</div>
         <div class="devenir"> <i class="fas fa-hands-helping"></i> Devenir partenaire</div>
         <div class="mentions"> Mentions legales</div>
+        <!--lien vers le contact omf-->
         <div class="contact"> <a href="mailto:contact@ohmyfood.com"> Contact</a></div>
     </footer>
 
