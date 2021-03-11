@@ -1,18 +1,24 @@
 @charset "UTF-8";
+/* import fichiers interne*/
+/* style commun a toutes les pages*/
+/*import fichiers externes*/
+/*fichiers de polices en provenance de google font*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* import fichiers interne*/
 /* variables pour les écrans*/
+/* reset (par defaut des navigateurs)*/
 html,
 body {
-  /* reset (par defaut des navigateurs)*/
   margin: 0;
   padding: 0;
 }
 
 /* decription des variables*/
 /* Variables photos*/
+/* Pour centrer les elements*/
+/* placeholder pour déclarer la taille et position des photos d'accueil*/
 .photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
-  /* Déclaration pour la taille et position des photos d'accueil*/
   border-radius: 10px 10px 0px 0px;
   height: 175px;
   background-position: center;
@@ -20,9 +26,11 @@ body {
   /* taille du backgroung couvre tout*/
 }
 
+/*Extension du placeholder photo_accueil_taille */
 .photo_gout {
-  /* Déclaration pour la taille et position des photos */
   background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  /*url de la photo*/
+  /*placeholder*/
 }
 
 .photo_enchante {
@@ -37,9 +45,8 @@ body {
   background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
+/* style des boutons*/
 .omf_btn, .btn_commande {
-  /* style des boutons*/
-  /* Pour centrer les elements*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,19 +55,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* insertion des elements de la mixin*/
   height: 50px;
   border-radius: 30px;
+  /*bordures arrondies*/
   text-align: center;
   width: 220px;
   color: #fff;
   -webkit-box-shadow: 5px 10px 7px #e2e2e2;
           box-shadow: 5px 10px 7px #e2e2e2;
+  /*ombre*/
   font-size: 16px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9353dc));
   background: linear-gradient(#ff79da, #9353dc);
+  /* dégradé*/
 }
 
 .omf_btn:hover, .btn_commande:hover {
+  /* changement au passage de la souris*/
   background: -webkit-gradient(linear, left top, left bottom, from(#9353dc), to(#ff79da));
   background: linear-gradient(#9353dc, #ff79da);
   -webkit-box-shadow: 5px 10px 7px #a19f9f;
@@ -77,8 +89,8 @@ body {
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
+/* vue mobile*/
 #bloc_page {
-  /* vue mobile*/
   width: auto;
 }
 
@@ -92,6 +104,7 @@ body {
           justify-content: center;
 }
 
+/*taille et position du logo*/
 #logo img {
   height: 30px;
   width: 160px;
@@ -100,7 +113,6 @@ body {
   margin-left: 20px;
 }
 
-/* vue divers ecran*/
 /*---------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------          ----------------------------------------------------*/
 /*-------------------------------------------  ------------------------------------------------------------*/
@@ -116,6 +128,7 @@ footer {
 }
 
 #logo_footer {
+  /* pas un logo mais utilisation de la police shrikhand sur le texte pour recréer le logo  */
   padding-top: 15px;
   padding-bottom: 20px;
   font-family: shrikhand;
@@ -142,15 +155,14 @@ footer {
   margin-bottom: 10px;
 }
 
-/* style commun a toutes les pages*/
+/* 100% de la page*/
 body {
-  /* 100% de la page*/
   width: auto;
   font-family: roboto;
 }
 
+/* positionnement de la flèche*/
 .fleche i {
-  /* positionnement de la flèche*/
   padding-top: 25px;
   margin-left: -70px;
   -ms-flex-line-pack: center;
@@ -162,13 +174,14 @@ body {
   color: black;
 }
 
+/* placeholder pour positionner les photos*/
 .photo_gout, .photo_enchante, .photo_delice_sens, .photo_ala_fr {
-  /* Pour positionner les photos*/
   border-radius: 0;
   width: 100%;
   height: 271px;
 }
 
+/*Extension du placeholder photo_position pour preciser les url des photos a utliser */
 .photo_gout {
   /* photo du restaurant*/
   background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -189,8 +202,8 @@ body {
   background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
+/* style du div nom_restaurant et heart*/
 .detail_resto {
-  /* style du div nom resto et heart*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,24 +218,24 @@ body {
   margin-top: -50px;
 }
 
+/* nom du restaurant dans sa page*/
 .nom_restaurant {
-  /* nom du restaurant dans sa page*/
   font-family: shrikhand;
   font-size: 27px;
   margin-left: 20px;
   padding-right: 10%;
 }
 
+/* titre des restaurants pour passer au w3c car il faut un titre au section, reset du h4 pour garder la mise en page*/
 h4 {
-  /* titre des restaurants*/
   margin: 0;
   padding: 0;
   text-decoration: none;
   font-weight: normal;
 }
 
+/* Heart dans la carte du restaurant*/
 .heart_open {
-  /* Heart dans la carte du restaurant*/
   padding-top: 5px;
   margin-right: 35px;
   font-size: 25px;
@@ -241,14 +254,15 @@ h4 {
   min-height: 330px;
 }
 
+/* Entrées, plats, desserts*/
 .titre {
-  /* Entrées, plats, desserts*/
   font-size: 17px;
   font-weight: lighter;
   padding-left: 17px;
   background-color: #f6f5f5;
 }
 
+/* petit trait sous le titre entrée ou plat, dessert*/
 .separateur {
   background-color: #99e2d0;
   height: 3px;
@@ -280,15 +294,18 @@ h4 {
           box-shadow: 2px 2px 5px 5px #e2e2e2;
   cursor: pointer;
   overflow: hidden;
+  /*masque les elements qui sortent du div .card_menu */
   -webkit-animation: apparait 2s linear forwards;
           animation: apparait 2s linear forwards;
-  /*disparition animation*/
+  /*déclenchement de l'animation apparait*/
   opacity: 0;
 }
 
+/*extension dela class .card_menu pour réaliser l'aparition en décalage des plats*/
 .card_menu1 {
   -webkit-animation-delay: 0.01s;
           animation-delay: 0.01s;
+  /* declage de l'apparition*/
 }
 
 .card_menu2 {
@@ -306,6 +323,7 @@ h4 {
           animation-delay: 0.9s;
 }
 
+/*animation d'apparition des plats */
 @-webkit-keyframes apparait {
   0% {
     -webkit-transform: translate(0, 20px);
@@ -318,7 +336,6 @@ h4 {
     opacity: 1;
   }
 }
-
 @keyframes apparait {
   0% {
     -webkit-transform: translate(0, 20px);
@@ -332,8 +349,8 @@ h4 {
   }
 }
 
+/*création du carré pour l'animation*/
 .carre {
-  /*création ddu carré pour l'animation*/
   position: absolute;
   background-color: #99e2d0;
   height: 67px;
@@ -344,19 +361,20 @@ h4 {
   transition: all 1s linear;
 }
 
+/*décalage du prix pour l'animation*/
 .card_menu:hover .somme, .card_menu1:hover .somme, .card_menu2:hover .somme, .card_menu3:hover .somme, .card_menu4:hover .somme {
   padding-right: 50px;
   -webkit-transition: 1s linear;
   transition: 1s linear;
 }
 
+/*animation du carré au hover sur card_menu*/
 .card_menu:hover .carre, .card_menu1:hover .carre, .card_menu2:hover .carre, .card_menu3:hover .carre, .card_menu4:hover .carre {
-  /*animation cercle*/
   right: 0;
 }
 
+/*création du cercle pour l'animation*/
 .check_circle {
-  /*création du cercle pour l'animation*/
   color: white;
   position: absolute;
   top: 20px;
@@ -366,8 +384,8 @@ h4 {
           transform: rotate(-360deg);
 }
 
+/*animation rotation du cercle au hover*/
 .card_menu:hover .check_circle, .card_menu1:hover .check_circle, .card_menu2:hover .check_circle, .card_menu3:hover .check_circle, .card_menu4:hover .check_circle {
-  /*animation cercle*/
   -webkit-transform: rotate(0);
           transform: rotate(0);
   -webkit-transition: all 0.5s linear;
@@ -376,8 +394,8 @@ h4 {
           transition-delay: 0.5s;
 }
 
+/*vue divers ecran*/
 @media only screen and (min-width: 768px) {
-  /*vue divers ecran*/
   .card_menu, .card_menu1, .card_menu2, .card_menu3, .card_menu4 {
     -ms-grid-columns: 20fr 1fr;
         grid-template-columns: 20fr 1fr;
@@ -392,7 +410,6 @@ h4 {
   text-overflow: ellipsis;
   /*disparition du texte et points de suspensions*/
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .detail_entree {
@@ -400,7 +417,6 @@ h4 {
   text-overflow: ellipsis;
   /*disparition du texte et points de suspentions*/
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .somme {
@@ -434,6 +450,7 @@ h4 {
   margin-top: -9px;
 }
 
+/* extension du btn commun*/
 .btn_commande {
   width: 180px;
 }

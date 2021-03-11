@@ -1,13 +1,13 @@
-@import "./style_omf_commun.scss"; /* style commun a toutes les pages*/
-
+/* import fichiers interne*/
+/* style commun a toutes les pages*/
+@import "./style_omf_commun.scss"; 
+ /* 100% de la page*/
 body {
-  /* 100% de la page*/
   width: auto;
   font-family: $omf_text_font;
 }
-
+/* positionnement de la flèche*/
 .fleche i {
-  /* positionnement de la flèche*/
   padding-top: 25px;
   margin-left: -70px;
   align-content: center;
@@ -16,14 +16,13 @@ body {
 .fleche a {
   color: black;
 }
-
+ /* placeholder pour positionner les photos*/
 %photo_position {
-  /* Pour positionner les photos*/
   border-radius: 0;
   width: 100%;
   height: 271px;
 }
-
+/*Extension du placeholder photo_position pour preciser les url des photos a utliser */
 .photo_gout {
   /* photo du restaurant*/
   background-image: $omf_background-image_gout;
@@ -44,9 +43,8 @@ body {
   background-image: $omf_background-image_francaise;
   @extend %photo_position;
 }
-
+/* style du div nom_restaurant et heart*/
 .detail_resto {
-  /* style du div nom resto et heart*/
   display: flex;
   justify-content: space-between; /* place le heart et le titre*/
   padding-top: 30px;
@@ -55,25 +53,22 @@ body {
   border-radius: 30px 30px 0 0;
   margin-top: -50px;
 }
-
-.nom_restaurant {
   /* nom du restaurant dans sa page*/
+.nom_restaurant {
   font-family: $omf_title_font;
   font-size: 27px;
-
   margin-left: 20px;
   padding-right: 10%;
 }
+ /* titre des restaurants pour passer au w3c car il faut un titre au section, reset du h4 pour garder la mise en page*/
 h4 {
-  /* titre des restaurants*/
   margin: 0;
   padding: 0;
   text-decoration: none;
   font-weight: normal;
 }
-
+/* Heart dans la carte du restaurant*/
 .heart_open {
-  /* Heart dans la carte du restaurant*/
   padding-top: 5px;
   margin-right: 35px;
   font-size: 25px;
@@ -90,14 +85,14 @@ h4 {
   background-color: $background-color-grey;
   min-height: 330px;
 }
-
+ /* Entrées, plats, desserts*/
 .titre {
-  /* Entrées, plats, desserts*/
-  font-size: 17px;
+   font-size: 17px;
   font-weight: lighter;
   padding-left: 17px;
   background-color: $background-color-grey;
 }
+/* petit trait sous le titre entrée ou plat, dessert*/
 .separateur {
   background-color: $tertiaire;
   height: 3px;
@@ -123,13 +118,14 @@ h4 {
   padding-left: 3%;
   box-shadow: 2px 2px 5px 5px #e2e2e2;
   cursor: pointer;
-  overflow: hidden;
-  animation: apparait 2s linear forwards; /*disparition animation*/
+  overflow: hidden; /*masque les elements qui sortent du div .card_menu */
+  animation: apparait 2s linear forwards; /*déclenchement de l'animation apparait*/
   opacity: 0;
 }
+/*extension dela class .card_menu pour réaliser l'aparition en décalage des plats*/
 .card_menu1 {
   @extend .card_menu;
-  animation-delay: 0.01s;
+  animation-delay: 0.01s; /* declage de l'apparition*/
 }
 .card_menu2 {
   @extend .card_menu;
@@ -143,6 +139,7 @@ h4 {
   @extend .card_menu;
   animation-delay: 0.9s;
 }
+/*animation d'apparition des plats */
 @keyframes apparait {
   0% {
     transform: translate(0, 20px);
@@ -154,9 +151,8 @@ h4 {
     opacity: 1;
   }
 }
-
+/*création du carré pour l'animation*/
 .carre {
-  /*création ddu carré pour l'animation*/
   position: absolute;
   background-color: $tertiaire;
   height: 67px;
@@ -165,16 +161,17 @@ h4 {
   border-radius: 0px 10px 10px 0px;
   transition: all 1s linear;
 }
+/*décalage du prix pour l'animation*/
 .card_menu:hover .somme {
   padding-right: 50px;
   transition: 1s linear;
 }
+/*animation du carré au hover sur card_menu*/
 .card_menu:hover .carre {
-  /*animation cercle*/
-  right: 0;
+    right: 0;
 }
+ /*création du cercle pour l'animation*/
 .check_circle {
-  /*création du cercle pour l'animation*/
   color: white;
   position: absolute;
   top: 20px;
@@ -182,15 +179,14 @@ h4 {
   font-size: 20px;
   transform: rotate(-360deg);
 }
+ /*animation rotation du cercle au hover*/
 .card_menu:hover .check_circle {
-  /*animation cercle*/
   transform: rotate(0);
   transition: all 0.5s linear;
   transition-delay: 0.5s;
 }
-
+ /*vue divers ecran*/
 @media #{$medium-up} {
-  /*vue divers ecran*/
   .card_menu {
     grid-template-columns: 20fr 1fr;
   }
@@ -202,14 +198,12 @@ h4 {
   font-weight: bold;
   text-overflow: ellipsis; /*disparition du texte et points de suspensions*/
   white-space: nowrap;
-  overflow: hidden;
-}
+  }
 .detail_entree {
   font-size: 15px;
   text-overflow: ellipsis; /*disparition du texte et points de suspentions*/
   white-space: nowrap;
-  overflow: hidden;
-}
+  }
 .somme {
   font-weight: bold;
   display: flex;
@@ -230,6 +224,7 @@ h4 {
   padding-bottom: 65px;
   margin-top: -9px;
 }
+/* extension du btn commun*/
 .btn_commande {
   @extend .omf_btn;
   width: 180px;
