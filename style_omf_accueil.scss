@@ -223,7 +223,7 @@ body {
 /*curseur pointer*/
 .icon_heart {
   cursor: pointer;
-  & input{     /* case a coché*/
+  & input{           /*case à cocher*/
     display: none;
   }
   & label{
