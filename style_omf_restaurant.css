@@ -299,8 +299,8 @@ h4 {
   cursor: pointer;
   overflow: hidden;
   /*masque les elements qui sortent du div .card_menu */
-  -webkit-animation: apparait 2s linear forwards;
-          animation: apparait 2s linear forwards;
+  -webkit-animation: apparait 0.6s linear forwards;
+          animation: apparait 0.6s linear forwards;
   /*déclenchement de l'animation apparait*/
   opacity: 0;
 }

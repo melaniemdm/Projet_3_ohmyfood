@@ -231,7 +231,7 @@ body {
   }
   & input:checked + label{ /*coche du heart, label qui suit le input*/
        .fas{
-    transition: all 1.5s ease-out; /*temps de remplissage du coeur*/
+    transition: all 0.3s ease-out; /*temps de remplissage du coeur*/
     font-size: $omf_font_size_heart;
     color: $primaire;
     background: -webkit-linear-gradient(

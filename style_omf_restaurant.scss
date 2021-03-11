@@ -119,7 +119,7 @@ h4 {
   box-shadow: 2px 2px 5px 5px #e2e2e2;
   cursor: pointer;
   overflow: hidden; /*masque les elements qui sortent du div .card_menu */
-  animation: apparait 2s linear forwards; /*déclenchement de l'animation apparait*/
+  animation: apparait 0.6s linear forwards; /*déclenchement de l'animation apparait*/
   opacity: 0;
 }
 /*extension dela class .card_menu pour réaliser l'aparition en décalage des plats*/

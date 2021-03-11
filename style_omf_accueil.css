@@ -462,8 +462,8 @@ body {
 }
 
 .icon_heart input:checked + label .fas {
-  -webkit-transition: all 1.5s ease-out;
-  transition: all 1.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   /*temps de remplissage du coeur*/
   font-size: 25px;
   color: #9353dc;
