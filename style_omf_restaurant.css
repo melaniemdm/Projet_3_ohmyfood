@@ -417,10 +417,20 @@ h4 {
 }
 
 .detail_entree {
+  width: 100%;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   /*disparition du texte et points de suspentions*/
-  white-space: nowrap;
+}
+
+.card_menu:hover .detail_entree, .card_menu1:hover .detail_entree, .card_menu2:hover .detail_entree, .card_menu3:hover .detail_entree, .card_menu4:hover .detail_entree {
+  margin-right: -60px;
+  text-overflow: ellipsis;
+  /*disparition du texte et points de suspentions*/
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
 }
 
 .somme {
