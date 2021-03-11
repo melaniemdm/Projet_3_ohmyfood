@@ -1,18 +1,22 @@
 @charset "UTF-8";
+/*import fichiers externes*/
+/*fichiers de polices en provenance de google font*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* import fichiers interne*/
 /* variables pour les écrans*/
+/* reset (par defaut des navigateurs)*/
 html,
 body {
-  /* reset (par defaut des navigateurs)*/
   margin: 0;
   padding: 0;
 }
 
 /* decription des variables*/
 /* Variables photos*/
+/* Pour centrer les elements*/
+/* placeholder pour déclarer la taille et position des photos d'accueil*/
 .photo_gout, .photo_enchante, .photo_ala_fr, .photo_delice_sens {
-  /* Déclaration pour la taille et position des photos d'accueil*/
   border-radius: 10px 10px 0px 0px;
   height: 175px;
   background-position: center;
@@ -20,9 +24,11 @@ body {
   /* taille du backgroung couvre tout*/
 }
 
+/*Extension du placeholder photo_accueil_taille */
 .photo_gout {
-  /* Déclaration pour la taille et position des photos */
   background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  /*url de la photo*/
+  /*placeholder*/
 }
 
 .photo_enchante {
@@ -37,9 +43,8 @@ body {
   background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
+/* style des boutons*/
 .omf_btn {
-  /* style des boutons*/
-  /* Pour centrer les elements*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,19 +53,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* insertion des elements de la mixin*/
   height: 50px;
   border-radius: 30px;
+  /*bordures arrondies*/
   text-align: center;
   width: 220px;
   color: #fff;
   -webkit-box-shadow: 5px 10px 7px #e2e2e2;
           box-shadow: 5px 10px 7px #e2e2e2;
+  /*ombre*/
   font-size: 16px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9353dc));
   background: linear-gradient(#ff79da, #9353dc);
+  /* dégradé*/
 }
 
 .omf_btn:hover {
+  /* changement au passage de la souris*/
   background: -webkit-gradient(linear, left top, left bottom, from(#9353dc), to(#ff79da));
   background: linear-gradient(#9353dc, #ff79da);
   -webkit-box-shadow: 5px 10px 7px #a19f9f;
@@ -77,8 +87,8 @@ body {
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
+/* vue mobile*/
 #bloc_page {
-  /* vue mobile*/
   width: auto;
 }
 
@@ -92,6 +102,7 @@ body {
           justify-content: center;
 }
 
+/*taille et position du logo*/
 #logo img {
   height: 30px;
   width: 160px;
@@ -100,7 +111,6 @@ body {
   margin-left: 20px;
 }
 
-/* vue divers ecran*/
 /*---------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------          ----------------------------------------------------*/
 /*-------------------------------------------  ------------------------------------------------------------*/
@@ -116,6 +126,7 @@ footer {
 }
 
 #logo_footer {
+  /* pas un logo mais utilisation de la police shrikhand sur le texte pour recréer le logo  */
   padding-top: 15px;
   padding-bottom: 20px;
   font-family: shrikhand;

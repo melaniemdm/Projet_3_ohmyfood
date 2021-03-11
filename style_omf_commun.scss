@@ -1,10 +1,13 @@
+/*import fichiers externes*/
+/*fichiers de polices en provenance de google font*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import "./responsive.scss"; /* variables pour les écrans*/
-
+/* import fichiers interne*/
+/* variables pour les écrans*/
+@import "./responsive.scss"; 
+/* reset (par defaut des navigateurs)*/
 html,
 body {
-  /* reset (par defaut des navigateurs)*/
   margin: 0;
   padding: 0;
 }
@@ -24,26 +27,24 @@ $omf_background-image_gout: url("./images/restaurants/jay-wennington-N_Y88TWmGwA
 $omf_background-image_enchante: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 $omf_background-image_francaise: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 $omf_background-image_delice: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-
+ 
+/* Pour centrer les elements*/
 @mixin centrer {
-  /* Pour centrer les elements*/
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
+/* placeholder pour déclarer la taille et position des photos d'accueil*/
 %photo_accueil_taille {
-  /* Déclaration pour la taille et position des photos d'accueil*/
   border-radius: 10px 10px 0px 0px;
   height: 175px;
   background-position: center;
   background-size: cover; /* taille du backgroung couvre tout*/
 }
-
+/*Extension du placeholder photo_accueil_taille */
 .photo_gout {
-  /* Déclaration pour la taille et position des photos */
-  background-image: $omf_background-image_gout;
-  @extend %photo_accueil_taille;
+  background-image: $omf_background-image_gout;/*url de la photo*/
+  @extend %photo_accueil_taille;/*placeholder*/
 }
 .photo_enchante {
   background-image: $omf_background-image_enchante;
@@ -57,19 +58,18 @@ $omf_background-image_delice: url("./images/restaurants/louis-hansel-shotsofloui
   background-image: $omf_background-image_delice;
   @extend %photo_accueil_taille;
 }
-
+/* style des boutons*/
 .omf_btn {
-  /* style des boutons*/
-  @include centrer;
+  @include centrer; /* insertion des elements de la mixin*/
   height: 50px;
-  border-radius: 30px;
+  border-radius: 30px; /*bordures arrondies*/
   text-align: center;
   width: 220px;
   color: #fff;
-  box-shadow: 5px 10px 7px #e2e2e2;
+  box-shadow: 5px 10px 7px #e2e2e2; /*ombre*/
   font-size: 16px;
-  background: linear-gradient($secondaire, $primaire);
-  &:hover {
+  background: linear-gradient($secondaire, $primaire); /* dégradé*/
+  &:hover {   /* changement au passage de la souris*/
     background: linear-gradient($primaire, $secondaire);
     box-shadow: 5px 10px 7px rgb(161, 159, 159);
     opacity: 0.8; /*eclairssissement btn*/
@@ -83,10 +83,9 @@ $omf_background-image_delice: url("./images/restaurants/louis-hansel-shotsofloui
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------  -----  ---------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
-
+ /* vue mobile*/
 #bloc_page {
-  /* vue mobile*/
-  width: auto;
+   width: auto;
 }
 
 /* mise en page du logo*/
@@ -94,6 +93,7 @@ $omf_background-image_delice: url("./images/restaurants/louis-hansel-shotsofloui
   display: flex;
   justify-content: center;
 }
+/*taille et position du logo*/
 #logo img {
   height: 30px;
   width: 160px;
@@ -101,8 +101,6 @@ $omf_background-image_delice: url("./images/restaurants/louis-hansel-shotsofloui
   margin-bottom: 10px;
   margin-left: 20px;
 }
-
-/* vue divers ecran*/
 
 /*---------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------          ----------------------------------------------------*/
@@ -117,7 +115,7 @@ footer {
   color: white;
   padding-left: 20px;
 }
-#logo_footer {
+#logo_footer {  /* pas un logo mais utilisation de la police shrikhand sur le texte pour recréer le logo  */
   padding-top: 15px;
   padding-bottom: 20px;
   font-family: shrikhand;
