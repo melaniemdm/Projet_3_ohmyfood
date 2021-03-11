@@ -483,7 +483,8 @@ body {
 }
 
 /*placement new*/
-.photo_gout, .photo_enchante {
+.photo_gout,
+.photo_enchante {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

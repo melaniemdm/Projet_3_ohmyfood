@@ -1,7 +1,7 @@
 /* import fichiers interne*/
 /* style commun a toutes les pages*/
-@import "./style_omf_commun.scss"; 
- /* 100% de la page*/
+@import "./style_omf_commun.scss";
+/* 100% de la page*/
 body {
   width: auto;
   font-family: $omf_text_font;
@@ -16,7 +16,7 @@ body {
 .fleche a {
   color: black;
 }
- /* placeholder pour positionner les photos*/
+/* placeholder pour positionner les photos*/
 %photo_position {
   border-radius: 0;
   width: 100%;
@@ -53,14 +53,14 @@ body {
   border-radius: 30px 30px 0 0;
   margin-top: -50px;
 }
-  /* nom du restaurant dans sa page*/
+/* nom du restaurant dans sa page*/
 .nom_restaurant {
   font-family: $omf_title_font;
   font-size: 27px;
   margin-left: 20px;
   padding-right: 10%;
 }
- /* titre des restaurants pour passer au w3c car il faut un titre au section, reset du h4 pour garder la mise en page*/
+/* titre des restaurants pour passer au w3c car il faut un titre au section, reset du h4 pour garder la mise en page*/
 h4 {
   margin: 0;
   padding: 0;
@@ -85,9 +85,9 @@ h4 {
   background-color: $background-color-grey;
   min-height: 330px;
 }
- /* Entrées, plats, desserts*/
+/* Entrées, plats, desserts*/
 .titre {
-   font-size: 17px;
+  font-size: 17px;
   font-weight: lighter;
   padding-left: 17px;
   background-color: $background-color-grey;
@@ -168,9 +168,9 @@ h4 {
 }
 /*animation du carré au hover sur card_menu*/
 .card_menu:hover .carre {
-    right: 0;
+  right: 0;
 }
- /*création du cercle pour l'animation*/
+/*création du cercle pour l'animation*/
 .check_circle {
   color: white;
   position: absolute;
@@ -179,13 +179,13 @@ h4 {
   font-size: 20px;
   transform: rotate(-360deg);
 }
- /*animation rotation du cercle au hover*/
+/*animation rotation du cercle au hover*/
 .card_menu:hover .check_circle {
   transform: rotate(0);
   transition: all 0.5s linear;
   transition-delay: 0.5s;
 }
- /*vue divers ecran*/
+/*vue divers ecran*/
 @media #{$medium-up} {
   .card_menu {
     grid-template-columns: 20fr 1fr;
@@ -198,12 +198,12 @@ h4 {
   font-weight: bold;
   text-overflow: ellipsis; /*disparition du texte et points de suspensions*/
   white-space: nowrap;
-  }
+}
 .detail_entree {
   font-size: 15px;
   text-overflow: ellipsis; /*disparition du texte et points de suspentions*/
   white-space: nowrap;
-  }
+}
 .somme {
   font-weight: bold;
   display: flex;
