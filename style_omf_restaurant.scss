@@ -124,20 +124,16 @@ h4 {
 }
 /*extension dela class .card_menu pour réaliser l'aparition en décalage des plats*/
 .card_menu1 {
-  @extend .card_menu;
-  animation-delay: 0.01s; /* declage de l'apparition*/
+    animation-delay: 0.01s; /* declage de l'apparition*/
 }
 .card_menu2 {
-  @extend .card_menu;
-  animation-delay: 0.3s;
+    animation-delay: 0.03s;
 }
 .card_menu3 {
-  @extend .card_menu;
-  animation-delay: 0.6s;
+    animation-delay: 0.06s;
 }
 .card_menu4 {
-  @extend .card_menu;
-  animation-delay: 0.9s;
+   animation-delay: 0.09s;
 }
 /*animation d'apparition des plats */
 @keyframes apparait {
@@ -159,32 +155,39 @@ h4 {
   width: 60px;
   right: -60px;
   border-radius: 0px 10px 10px 0px;
-  transition: all 0.6s linear;
+  transition: all 0.4s linear;
 }
 /*décalage du prix pour l'animation*/
 .card_menu:hover .somme {
   padding-right: 60px;
-  transition: 0.6s linear;
+  transition: 0.4s linear;
 }
 /*animation du carré au hover sur card_menu*/
 .card_menu:hover .carre {
   right: 0;
 }
 /*création du cercle pour l'animation*/
+@keyframes tourne{
+  0%{
+    transform: rotate(-360deg);
+  }
+    100%{
+    transform: rotate(0);
+  }
+}
 .check_circle {
   color: white;
   position: absolute;
   top: 20px;
   left: 25px;
   font-size: 20px;
-  transform: rotate(-360deg);
-}
+  
+  }
+
 /*animation rotation du cercle au hover*/
 .card_menu:hover .check_circle {
-  transform: rotate(0);
-  transition: all 0.5s linear;
-  transition-delay: 0.5s;
-}
+  animation: tourne 0.4s linear;
+    }
 /*vue divers ecran*/
 @media #{$medium-up} {
   .card_menu {
@@ -218,6 +221,7 @@ transition: all 0.6s linear;
   display: flex;
   justify-content: flex-end;
   margin-right: 5px;
+  transition: all 0.4s linear;
 }
 @media #{$medium-up} {
   .somme {

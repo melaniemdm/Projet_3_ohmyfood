@@ -276,7 +276,7 @@ h4 {
   margin-bottom: 15px;
 }
 
-.card_menu, .card_menu1, .card_menu2, .card_menu3, .card_menu4 {
+.card_menu {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -313,18 +313,18 @@ h4 {
 }
 
 .card_menu2 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 0.03s;
+          animation-delay: 0.03s;
 }
 
 .card_menu3 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation-delay: 0.06s;
+          animation-delay: 0.06s;
 }
 
 .card_menu4 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
+  -webkit-animation-delay: 0.09s;
+          animation-delay: 0.09s;
 }
 
 /*animation d'apparition des plats */
@@ -361,46 +361,61 @@ h4 {
   width: 60px;
   right: -60px;
   border-radius: 0px 10px 10px 0px;
-  -webkit-transition: all 0.6s linear;
-  transition: all 0.6s linear;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 /*décalage du prix pour l'animation*/
-.card_menu:hover .somme, .card_menu1:hover .somme, .card_menu2:hover .somme, .card_menu3:hover .somme, .card_menu4:hover .somme {
+.card_menu:hover .somme {
   padding-right: 60px;
-  -webkit-transition: 0.6s linear;
-  transition: 0.6s linear;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 /*animation du carré au hover sur card_menu*/
-.card_menu:hover .carre, .card_menu1:hover .carre, .card_menu2:hover .carre, .card_menu3:hover .carre, .card_menu4:hover .carre {
+.card_menu:hover .carre {
   right: 0;
 }
 
 /*création du cercle pour l'animation*/
+@-webkit-keyframes tourne {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes tourne {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
 .check_circle {
   color: white;
   position: absolute;
   top: 20px;
   left: 25px;
   font-size: 20px;
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
 }
 
 /*animation rotation du cercle au hover*/
-.card_menu:hover .check_circle, .card_menu1:hover .check_circle, .card_menu2:hover .check_circle, .card_menu3:hover .check_circle, .card_menu4:hover .check_circle {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+.card_menu:hover .check_circle {
+  -webkit-animation: tourne 0.4s linear;
+          animation: tourne 0.4s linear;
 }
 
 /*vue divers ecran*/
 @media only screen and (min-width: 768px) {
-  .card_menu, .card_menu1, .card_menu2, .card_menu3, .card_menu4 {
+  .card_menu {
     -ms-grid-columns: 20fr 1fr;
         grid-template-columns: 20fr 1fr;
   }
@@ -425,7 +440,7 @@ h4 {
   /*disparition du texte et points de suspentions*/
 }
 
-.card_menu:hover .detail_entree, .card_menu1:hover .detail_entree, .card_menu2:hover .detail_entree, .card_menu3:hover .detail_entree, .card_menu4:hover .detail_entree {
+.card_menu:hover .detail_entree {
   margin-right: -60px;
   text-overflow: ellipsis;
   /*disparition du texte et points de suspentions*/
@@ -442,6 +457,8 @@ h4 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 5px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 @media only screen and (min-width: 768px) {
