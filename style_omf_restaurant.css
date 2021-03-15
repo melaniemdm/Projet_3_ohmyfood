@@ -353,8 +353,10 @@ h4 {
   background-color: #99e2d0;
   height: 67px;
   width: 60px;
-  right: -60px;
+  right: 0;
   border-radius: 0px 10px 10px 0px;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
@@ -368,7 +370,10 @@ h4 {
 
 /*animation du carré au hover sur card_menu*/
 .card_menu:hover .carre {
-  right: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 /*création du cercle pour l'animation*/

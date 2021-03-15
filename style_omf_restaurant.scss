@@ -149,8 +149,9 @@ h4 {
   background-color: $tertiaire;
   height: 67px;
   width: 60px;
-  right: -60px;
-  border-radius: 0px 10px 10px 0px;
+  right: 0;
+ border-radius: 0px 10px 10px 0px;
+ transform: translateX(100px);
   transition: all 0.4s linear;
 }
 /*décalage du prix pour l'animation*/
@@ -160,7 +161,8 @@ h4 {
 }
 /*animation du carré au hover sur card_menu*/
 .card_menu:hover .carre {
-  right: 0;
+  transform: translateX(0);
+  transition: 0.4s linear;
 }
 /*création du cercle pour l'animation*/
 @keyframes tourne{
