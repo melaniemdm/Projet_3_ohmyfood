@@ -207,10 +207,9 @@ body {
     color: black;
   }
 }
-/*Mise en page coeurs*/
+/*placeholder - style du coeur vide*/
 .heart_open {
-  font-size: $omf_font_size_heart;
-  color: $color_heart_open;
+  @extend %heart_style; /* heart_style dans commun*/
 }
 .heart_close {
   color: transparent;

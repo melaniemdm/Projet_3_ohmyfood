@@ -19,6 +19,11 @@ body {
 }
 
 /* decription des variables*/
+.heart_open {
+  font-size: 25px;
+  color: #9e9a9a;
+}
+
 /* Variables photos*/
 /* Pour centrer les elements*/
 /* placeholder pour déclarer la taille et position des photos d'accueil*/
@@ -428,10 +433,9 @@ body {
   color: black;
 }
 
-/*Mise en page coeurs*/
+/*placeholder - style du coeur vide*/
 .heart_open {
-  font-size: 25px;
-  color: #9e9a9a;
+  /* heart_style dans commun*/
 }
 
 .heart_close {

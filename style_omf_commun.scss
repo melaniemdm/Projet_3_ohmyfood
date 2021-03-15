@@ -23,6 +23,11 @@ $primaire: #9353dc;
 $tertiaire: #99e2d0;
 $color_heart_open:#9e9a9a;
 
+
+%heart_style{
+  font-size: $omf_font_size_heart;
+  color: $color_heart_open;
+}
 /* Variables photos*/
 $omf_background-image_gout: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 $omf_background-image_enchante: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");

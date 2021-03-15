@@ -19,6 +19,11 @@ body {
 }
 
 /* decription des variables*/
+.heart_open_resto {
+  font-size: 25px;
+  color: #9e9a9a;
+}
+
 /* Variables photos*/
 /* Pour centrer les elements*/
 /* placeholder pour déclarer la taille et position des photos d'accueil*/
@@ -240,11 +245,10 @@ h4 {
 
 /* Heart dans la carte du restaurant*/
 .heart_open_resto {
-  font-size: 25px;
   padding-top: 5px;
   margin-right: 5%;
   text-align: right;
-  color: #9e9a9a;
+  /* placeholder heart vide dans commun*/
 }
 
 .cards_menu {
