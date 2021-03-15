@@ -239,18 +239,12 @@ h4 {
 }
 
 /* Heart dans la carte du restaurant*/
-.heart_open {
-  padding-top: 5px;
-  margin-right: 35px;
+.heart_open_resto {
   font-size: 25px;
+  padding-top: 5px;
+  margin-right: 5%;
   text-align: right;
-  color: #777575;
-}
-
-@media only screen and (min-width: 768px) {
-  .heart_open {
-    margin-right: 70px;
-  }
+  color: #9e9a9a;
 }
 
 .cards_menu {

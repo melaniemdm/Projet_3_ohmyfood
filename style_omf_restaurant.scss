@@ -68,18 +68,14 @@ h4 {
   font-weight: normal;
 }
 /* Heart dans la carte du restaurant*/
-.heart_open {
+.heart_open_resto {
+  font-size: $omf_font_size_heart;
   padding-top: 5px;
-  margin-right: 35px;
-  font-size: 25px;
+  margin-right: 5%;
   text-align: right;
-  color: rgb(119, 117, 117);
+  color: $color_heart_open;
 }
-@media #{$medium-up} {
-  .heart_open {
-    margin-right: 70px;
-  }
-}
+
 
 .cards_menu {
   background-color: $background-color-grey;

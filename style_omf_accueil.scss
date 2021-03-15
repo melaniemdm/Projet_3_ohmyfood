@@ -210,7 +210,7 @@ body {
 /*Mise en page coeurs*/
 .heart_open {
   font-size: $omf_font_size_heart;
-  color: #9e9a9a;
+  color: $color_heart_open;
 }
 .heart_close {
   color: transparent;
