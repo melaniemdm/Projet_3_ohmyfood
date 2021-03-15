@@ -1,11 +1,8 @@
 /* import fichiers interne*/
 /* style commun a toutes les pages*/
 @import "./style_omf_commun.scss";
-/* 100% de la page*/
-body {
-  width: auto;
-  font-family: $omf_text_font;
-}
+
+
 /* positionnement de la flèche*/
 .fleche i {
   padding-top: 25px;

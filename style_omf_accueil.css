@@ -19,6 +19,11 @@ body {
 }
 
 /* decription des variables*/
+body {
+  width: auto;
+  font-family: roboto;
+}
+
 .heart_open {
   font-size: 25px;
   color: #9e9a9a;
@@ -162,11 +167,6 @@ footer {
 
 .mentions {
   margin-bottom: 10px;
-}
-
-/*polices*/
-body {
-  font-family: roboto, Arial, "sans-sherif";
 }
 
 /*---------------------------------------Varaibles------------------------------------------------------------------*/

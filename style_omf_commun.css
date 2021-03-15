@@ -17,6 +17,11 @@ body {
 }
 
 /* decription des variables*/
+body {
+  width: auto;
+  font-family: roboto, Arial, "sans-sherif";
+}
+
 /* Variables photos*/
 /* Pour centrer les elements*/
 /* placeholder pour déclarer la taille et position des photos d'accueil*/
