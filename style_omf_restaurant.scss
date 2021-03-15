@@ -114,7 +114,7 @@ h4 {
   box-shadow: 2px 2px 5px 5px #e2e2e2;
   cursor: pointer;
   overflow: hidden; /*masque les elements qui sortent du div .card_menu */
-  animation: apparait 0.6s linear forwards; /*déclenchement de l'animation apparait*/
+  animation: apparait 0.5s linear forwards; /*déclenchement de l'animation apparait*/
   opacity: 0;
 }
 /*extension dela class .card_menu pour réaliser l'aparition en décalage des plats*/
@@ -125,10 +125,10 @@ h4 {
     animation-delay: 0.03s;
 }
 .card_menu3 {
-    animation-delay: 0.06s;
+    animation-delay: 0.05s;
 }
 .card_menu4 {
-   animation-delay: 0.09s;
+   animation-delay: 0.07s;
 }
 /*animation d'apparition des plats */
 @keyframes apparait {
