@@ -178,8 +178,8 @@ body {
 /* mise en page du map*/
 .map {
   height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c7c6c6), color-stop(10%, #ebe5e5));
-  background: linear-gradient(#c7c6c6, #ebe5e5 10%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c7c6c6), color-stop(15%, #ebe5e5));
+  background: linear-gradient(#c7c6c6, #ebe5e5 15%);
   /* dégradé*/
   display: -webkit-box;
   display: -ms-flexbox;
