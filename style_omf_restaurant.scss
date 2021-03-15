@@ -112,13 +112,10 @@ h4 {
   box-shadow: 2px 2px 5px 5px #e2e2e2;
   cursor: pointer;
   overflow: hidden; /*masque les elements qui sortent du div .card_menu */
-  animation: apparait 0.5s linear forwards; /*déclenchement de l'animation apparait*/
+  animation: apparait $transition forwards; /*déclenchement de l'animation apparait*/
   opacity: 0;
 }
 /*extension dela class .card_menu pour réaliser l'aparition en décalage des plats*/
-.card_menu1 {
-    animation-delay: 0.01s; /* declage de l'apparition*/
-}
 .card_menu2 {
     animation-delay: 0.03s;
 }
@@ -149,17 +146,17 @@ h4 {
   right: 0;
  border-radius: 0px 10px 10px 0px;
  transform: translateX(100px);
-  transition: all 0.4s linear;
+  transition: $transition;
 }
 /*décalage du prix pour l'animation*/
 .card_menu:hover .somme {
   padding-right: 60px;
-  transition: 0.4s linear;
+  transition: $transition;
 }
 /*animation du carré au hover sur card_menu*/
 .card_menu:hover .carre {
   transform: translateX(0);
-  transition: 0.4s linear;
+  transition: $transition;
 }
 /*création du cercle pour l'animation*/
 @keyframes tourne{
@@ -181,7 +178,7 @@ h4 {
 
 /*animation rotation du cercle au hover*/
 .card_menu:hover .check_circle {
-  animation: tourne 0.4s linear;
+  animation: tourne $transition;
     }
 /*vue divers ecran*/
 @media #{$medium-up} {
@@ -208,15 +205,14 @@ h4 {
   .card_menu:hover .detail_entree{
 margin-right: -60px;
 text-overflow: ellipsis; /*disparition du texte et points de suspentions*/
-
-transition: all 0.6s linear;
+transition: $transition;
   }
 .somme {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
   margin-right: 5px;
-  transition: all 0.4s linear;
+  transition: $transition;
 }
 @media #{$medium-up} {
   .somme {

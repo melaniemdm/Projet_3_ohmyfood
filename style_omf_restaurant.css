@@ -20,8 +20,9 @@ body {
 
 /* decription des variables*/
 body {
+  /*police du body*/
   width: auto;
-  font-family: roboto;
+  font-family: roboto, Arial, "sans-sherif";
 }
 
 .heart_open_resto {
@@ -296,19 +297,13 @@ h4 {
   cursor: pointer;
   overflow: hidden;
   /*masque les elements qui sortent du div .card_menu */
-  -webkit-animation: apparait 0.5s linear forwards;
-          animation: apparait 0.5s linear forwards;
+  -webkit-animation: apparait 0.4s linear forwards;
+          animation: apparait 0.4s linear forwards;
   /*déclenchement de l'animation apparait*/
   opacity: 0;
 }
 
 /*extension dela class .card_menu pour réaliser l'aparition en décalage des plats*/
-.card_menu1 {
-  -webkit-animation-delay: 0.01s;
-          animation-delay: 0.01s;
-  /* declage de l'apparition*/
-}
-
 .card_menu2 {
   -webkit-animation-delay: 0.03s;
           animation-delay: 0.03s;
@@ -360,8 +355,8 @@ h4 {
   border-radius: 0px 10px 10px 0px;
   -webkit-transform: translateX(100px);
           transform: translateX(100px);
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 /*décalage du prix pour l'animation*/
@@ -446,8 +441,8 @@ h4 {
   margin-right: -60px;
   text-overflow: ellipsis;
   /*disparition du texte et points de suspentions*/
-  -webkit-transition: all 0.6s linear;
-  transition: all 0.6s linear;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 .somme {
@@ -459,8 +454,8 @@ h4 {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 5px;
-  -webkit-transition: all 0.4s linear;
-  transition: all 0.4s linear;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 @media only screen and (min-width: 768px) {
