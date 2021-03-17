@@ -542,6 +542,9 @@ footer {
   }
   100% {
     opacity: 0;
+    /*fait disparaitre le loader*/
+    z-index: -1;
+    /*permet de faire passer le loader en arrire plan et permet au btn de fonctionner*/
   }
 }
 @keyframes tourne {
@@ -555,6 +558,9 @@ footer {
   }
   100% {
     opacity: 0;
+    /*fait disparaitre le loader*/
+    z-index: -1;
+    /*permet de faire passer le loader en arrire plan et permet au btn de fonctionner*/
   }
 }
 
@@ -563,8 +569,8 @@ footer {
   border: 30px solid #ff79da;
   border-top: 30px solid #99e2d0;
   border-bottom: 30px solid #9353dc;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin: auto;
   /* placement*/

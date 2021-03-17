@@ -278,7 +278,8 @@
     transform: rotate(360deg);
   }
   100% {
-    opacity: 0;
+    opacity: 0; /*fait disparaitre le loader*/
+    z-index: -1; /*permet de faire passer le loader en arrire plan et permet au btn de fonctionner*/
     }
 }
 .loading {
@@ -286,8 +287,8 @@
   border: 30px solid $secondaire;
   border-top: 30px solid $tertiaire;
   border-bottom: 30px solid $primaire;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin: auto; /* placement*/
   position: absolute;
