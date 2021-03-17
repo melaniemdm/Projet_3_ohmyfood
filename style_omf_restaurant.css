@@ -246,9 +246,9 @@ h4 {
 /* Heart dans la carte du restaurant*/
 .heart_open_resto {
   /* placeholder heart vide dans commun*/
-  padding-top: 5px;
-  margin-right: 5%;
-  text-align: right;
+  position: absolute;
+  right: 50px;
+  opacity: 1;
 }
 
 .cards_menu {
