@@ -269,6 +269,18 @@
     width: auto;
   }
 }
+/* animation loader*/
+@keyframes tourne {
+  0% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+    }
+}
 .loading {
   /* création du loader*/
   border: 30px solid $secondaire;
@@ -283,19 +295,6 @@
   bottom: 0;
   right: 0;
   left: 0;
-  animation: tourne 1.5s forwards;
+  animation: tourne 0.5s forwards;
 }
-/* animation loader*/
-@keyframes tourne {
-  0% {
-    transform: rotate(0deg);
-  }
-  90% {
-    transform: rotate(360deg);
-  }
-  100% {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-}
+
