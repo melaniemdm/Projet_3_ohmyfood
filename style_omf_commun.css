@@ -36,21 +36,21 @@ body {
 
 /*Extension du placeholder photo_accueil_taille */
 .photo_gout {
-  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.webp");
   /*url de la photo*/
   /*placeholder*/
 }
 
 .photo_enchante {
-  background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.webp");
 }
 
 .photo_ala_fr {
-  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.webp");
 }
 
 .photo_delice_sens {
-  background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.webp");
 }
 
 /* style des boutons*/
