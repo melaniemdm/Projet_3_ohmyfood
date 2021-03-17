@@ -16,12 +16,12 @@ body {
 $omf_text_font: roboto;
 $omf_title_font: shrikhand;
 $omf_font_default: Arial, "sans-sherif";
-$omf_font_size_heart: 25px;
+$omf_font_size_heart: 23px;
 $background-color-grey: #f6f5f5;
 $secondaire: #ff79da;
 $primaire: #9353dc;
 $tertiaire: #99e2d0;
-$color_heart_open:#9e9a9a;
+$color_heart_open:#000;
 $transition: 0.4s linear;
 
 body {   /*police du body*/
@@ -32,6 +32,7 @@ body {   /*police du body*/
 %heart_style{
   font-size: $omf_font_size_heart;
   color: $color_heart_open;
+  font-weight: lighter;
 }
 /* Variables photos*/
 $omf_background-image_gout: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.webp");

@@ -237,7 +237,11 @@
     ); /*degradé icon heart*/
     -webkit-background-clip: text; /* -webkit genere un warning mais est essentiel au fonctionnement du heart*/
     color: transparent;
-  }}
+  }
+.far{
+  transform:scale(0.9);     // Permet de diminuer legerement le heart open
+  transition: all 0.1s ease-out 0.2s; 
+}}
 }
 .new {
   border-radius: 2px;
