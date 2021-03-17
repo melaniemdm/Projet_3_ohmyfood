@@ -94,7 +94,18 @@ h4 {
   margin-top: 5px;
   margin-bottom: 15px;
 }
-
+/*animation d'apparition des plats */
+@keyframes apparait {
+  0% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .card_menu {
   position: relative;
   display: grid;
@@ -125,18 +136,7 @@ h4 {
 .card_menu4 {
    animation-delay: 0.07s;
 }
-/*animation d'apparition des plats */
-@keyframes apparait {
-  0% {
-    transform: translate(0, 20px);
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 /*création du carré pour l'animation*/
 .carre {
   position: absolute;
