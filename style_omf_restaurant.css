@@ -331,18 +331,18 @@ h4 {
 
 /*extension dela class .card_menu pour réaliser l'aparition en décalage des plats*/
 .card_menu2 {
-  -webkit-animation-delay: 0.03s;
-          animation-delay: 0.03s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .card_menu3 {
-  -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .card_menu4 {
-  -webkit-animation-delay: 0.07s;
-          animation-delay: 0.07s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 /*création du carré pour l'animation*/
