@@ -26,7 +26,7 @@ body {
 }
 
 .heart_open {
-  font-size: 23px;
+  font-size: 25px;
   color: #000;
   font-weight: lighter;
 }
@@ -471,8 +471,7 @@ footer {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   /*temps de remplissage du coeur*/
-  font-size: 23px;
-  color: #9353dc;
+  font-size: 25px;
   background: -webkit-linear-gradient(#9353dc, #ff79da);
   /*degradé icon heart*/
   -webkit-background-clip: text;
@@ -481,10 +480,7 @@ footer {
 }
 
 .icon_heart input:checked + label .far {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: all 0.1s ease-out 0.2s;
-  transition: all 0.1s ease-out 0.2s;
+  opacity: 0;
 }
 
 .new {

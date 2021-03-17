@@ -230,8 +230,7 @@
        .fas{
     transition: all 0.3s ease-out; /*temps de remplissage du coeur*/
     font-size: $omf_font_size_heart;
-    color: $primaire;
-    background: -webkit-linear-gradient(
+       background: -webkit-linear-gradient(
       $primaire,
       $secondaire
     ); /*degradé icon heart*/
@@ -239,8 +238,7 @@
     color: transparent;
   }
 .far{
-  transform:scale(0.9);     // Permet de diminuer legerement le heart open
-  transition: all 0.1s ease-out 0.2s; 
+  opacity: 0;
 }}
 }
 .new {

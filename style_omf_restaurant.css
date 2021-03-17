@@ -28,6 +28,7 @@ body {
 .heart_open_resto {
   font-size: 25px;
   color: #000;
+  font-weight: lighter;
 }
 
 /* Variables photos*/
@@ -248,7 +249,7 @@ h4 {
   /* placeholder heart vide dans commun*/
   position: absolute;
   right: 50px;
-  opacity: 1;
+  margin-top: 10px;
 }
 
 .cards_menu {
