@@ -280,9 +280,10 @@ h4 {
   0% {
     -webkit-transform: translate(0, 20px);
             transform: translate(0, 20px);
+    opacity: 0;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.4;
   }
   100% {
     opacity: 1;
@@ -292,9 +293,10 @@ h4 {
   0% {
     -webkit-transform: translate(0, 20px);
             transform: translate(0, 20px);
+    opacity: 0;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.4;
   }
   100% {
     opacity: 1;
@@ -330,20 +332,24 @@ h4 {
   opacity: 0;
 }
 
-/*extension dela class .card_menu pour réaliser l'aparition en décalage des plats*/
+.card_menu1 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
 .card_menu2 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .card_menu3 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 .card_menu4 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
 }
 
 /*création du carré pour l'animation*/
