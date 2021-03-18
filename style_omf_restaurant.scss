@@ -125,9 +125,9 @@ h4 {
   overflow: hidden; /*masque les elements qui sortent du div .card_menu */
   animation: apparait $transition forwards; /*déclenchement de l'animation apparait*/
   opacity: 0;
-  @for $toto from 1 through 4 {     // boucle pour animation delay des 4 card
-    &#{$toto} {
-        animation-delay: 300ms* $toto;
+  @for $num from 1 through 4 {     // boucle pour animation delay des 4 card
+    &#{$num} {
+        animation-delay: 300ms* $num;
     }
 }
 }
