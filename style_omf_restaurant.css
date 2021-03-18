@@ -443,6 +443,7 @@ h4 {
   grid-column: 1 / span2;
   padding-top: 10px;
   font-weight: bold;
+  overflow: hidden;
   text-overflow: ellipsis;
   /*disparition du texte et points de suspensions*/
   white-space: nowrap;
