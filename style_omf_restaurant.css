@@ -360,8 +360,8 @@ h4 {
   width: 60px;
   right: 0;
   border-radius: 0px 10px 10px 0px;
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
 }
@@ -463,12 +463,6 @@ h4 {
   margin-right: 5px;
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
-}
-
-@media only screen and (min-width: 768px) {
-  .somme {
-    margin-right: 45px;
-  }
 }
 
 .commander {

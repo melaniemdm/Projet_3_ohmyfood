@@ -140,7 +140,7 @@ h4 {
   width: 60px;
   right: 0;
  border-radius: 0px 10px 10px 0px;
- transform: translateX(100px);
+ transform: translateX(60px);
   transition: $transition;
 }
 /*décalage du prix pour l'animation*/
@@ -208,11 +208,6 @@ transition: $transition;
   justify-content: flex-end;
   margin-right: 5px;
   transition: $transition;
-}
-@media #{$medium-up} {
-  .somme {
-    margin-right: 45px;
-  }
 }
 
 .commander {
