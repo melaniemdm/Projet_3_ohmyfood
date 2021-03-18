@@ -180,6 +180,7 @@ footer {
 /* mise en page du map*/
 .map {
   height: 50px;
+  min-width: 250px;
   background: -webkit-gradient(linear, left top, left bottom, from(#c7c6c6), color-stop(15%, #ebe5e5));
   background: linear-gradient(#c7c6c6, #ebe5e5 15%);
   /* dégradé*/
@@ -192,9 +193,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.map .texte_map {
   font-size: 16px;
   font-family: roboto;
   font-weight: bold;

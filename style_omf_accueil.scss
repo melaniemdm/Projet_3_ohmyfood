@@ -14,6 +14,7 @@
 /* mise en page du map*/
 .map {
   height: 50px;
+  min-width: 250px;
   background: linear-gradient(
     rgb(199, 198, 198),
     rgb(235, 229, 229) 15%
@@ -21,12 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .texte_map {
-    font-size: 16px;
-    font-family: $omf_text_font;
-    font-weight: bold;
-  }
+  font-size: 16px;
+  font-family: $omf_text_font;
+  font-weight: bold;
+  
   .icon_map {
     font-size: 18px;
     margin-right: 17px;
