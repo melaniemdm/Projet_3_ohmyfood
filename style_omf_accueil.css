@@ -541,8 +541,8 @@ footer {
   100% {
     opacity: 0;
     /*fait disparaitre le loader*/
-    -webkit-transform: translateZ(1000px);
-            transform: translateZ(1000px);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     /*Axe de profondeur - permet d'envoyer le loader en profondeur et donc passe arriere plan et permet au btn de fonctionner*/
   }
 }
@@ -558,8 +558,8 @@ footer {
   100% {
     opacity: 0;
     /*fait disparaitre le loader*/
-    -webkit-transform: translateZ(1000px);
-            transform: translateZ(1000px);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     /*Axe de profondeur - permet d'envoyer le loader en profondeur et donc passe arriere plan et permet au btn de fonctionner*/
   }
 }
@@ -572,7 +572,7 @@ footer {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin: 350px;
+  margin: auto;
   /* placement*/
   position: absolute;
   top: 0;
