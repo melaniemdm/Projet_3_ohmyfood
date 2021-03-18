@@ -352,6 +352,13 @@ h4 {
           animation-delay: 1200ms;
 }
 
+@media only screen and (min-width: 768px) {
+  .card_menu {
+    -ms-grid-columns: 20fr 1fr;
+        grid-template-columns: 20fr 1fr;
+  }
+}
+
 /*création du carré pour l'animation*/
 .carre {
   position: absolute;
@@ -366,6 +373,27 @@ h4 {
   transition: 0.4s linear;
 }
 
+/*animation du carré au hover sur card_menu*/
+.card_menu:hover .carre {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+
+.somme {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+
 /*décalage du prix pour l'animation*/
 .card_menu:hover .somme {
   padding-right: 60px;
@@ -373,12 +401,12 @@ h4 {
   transition: 0.4s linear;
 }
 
-/*animation du carré au hover sur card_menu*/
-.card_menu:hover .carre {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
+.check_circle {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-size: 20px;
 }
 
 /*création du cercle pour l'animation*/
@@ -403,14 +431,6 @@ h4 {
   }
 }
 
-.check_circle {
-  color: white;
-  position: absolute;
-  top: 20px;
-  left: 25px;
-  font-size: 20px;
-}
-
 /*animation rotation du cercle au hover*/
 .card_menu:hover .check_circle {
   -webkit-animation: tourne 0.4s linear;
@@ -418,13 +438,6 @@ h4 {
 }
 
 /*vue divers ecran*/
-@media only screen and (min-width: 768px) {
-  .card_menu {
-    -ms-grid-columns: 20fr 1fr;
-        grid-template-columns: 20fr 1fr;
-  }
-}
-
 .titre_entree {
   font-size: 19px;
   grid-column: 1 / span2;
@@ -448,19 +461,6 @@ h4 {
   margin-right: -60px;
   text-overflow: ellipsis;
   /*disparition du texte et points de suspentions*/
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
-}
-
-.somme {
-  font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 5px;
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
 }
