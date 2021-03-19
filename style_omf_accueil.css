@@ -543,7 +543,7 @@ footer {
     /*fait disparaitre le loader*/
     -webkit-transform: scale(0);
             transform: scale(0);
-    /* Permet au btn de fonctionner en mibnimisant le loader*/
+    /* Permet au btn de fonctionner en minimisant le loader*/
   }
 }
 @keyframes tourne {
@@ -560,7 +560,7 @@ footer {
     /*fait disparaitre le loader*/
     -webkit-transform: scale(0);
             transform: scale(0);
-    /* Permet au btn de fonctionner en mibnimisant le loader*/
+    /* Permet au btn de fonctionner en minimisant le loader*/
   }
 }
 
