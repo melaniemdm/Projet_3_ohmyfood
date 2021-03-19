@@ -132,7 +132,7 @@ footer {
   /* pas un logo mais utilisation de la police shrikhand sur le texte pour recréer le logo  */
   padding-top: 15px;
   padding-bottom: 20px;
-  font-family: shrikhand;
+  font-family: $omf_title_font; 
   font-size: 17px;
   color: #fff;
 }
