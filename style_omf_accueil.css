@@ -543,7 +543,7 @@ footer {
     /*fait disparaitre le loader*/
     -webkit-transform: scale(0);
             transform: scale(0);
-    /*Axe de profondeur - permet d'envoyer le loader en profondeur et donc passe arriere plan et permet au btn de fonctionner*/
+    /* Permet au btn de fonctionner en mibnimisant le loader*/
   }
 }
 @keyframes tourne {
@@ -560,7 +560,7 @@ footer {
     /*fait disparaitre le loader*/
     -webkit-transform: scale(0);
             transform: scale(0);
-    /*Axe de profondeur - permet d'envoyer le loader en profondeur et donc passe arriere plan et permet au btn de fonctionner*/
+    /* Permet au btn de fonctionner en mibnimisant le loader*/
   }
 }
 
@@ -579,7 +579,8 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  -webkit-animation: tourne 0.5s forwards;
-          animation: tourne 0.5s forwards;
+  -webkit-animation: tourne 2s forwards;
+          animation: tourne 2s forwards;
+  /* mis a 2s comme demandé dasn le brief - trop rapide à 0.5s */
 }
 /*# sourceMappingURL=style_omf_accueil.css.map */
