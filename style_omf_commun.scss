@@ -23,6 +23,8 @@ $primaire: #9353dc;
 $tertiaire: #99e2d0;
 $color_heart_open:#000;
 $transition: 0.4s linear;
+$background_gradient:linear-gradient($secondaire, $primaire);
+$transition_loading: 3s forwards;
 
 body {   /*police du body*/
   width: auto;
@@ -80,12 +82,12 @@ background-image: $omf_background-image_delice;
   color: #fff;
   box-shadow: 5px 10px 7px #e2e2e2; /*ombre*/
   font-size: 16px;
-  background: linear-gradient($secondaire, $primaire); /* dégradé*/
+  background: $background_gradient; /* dégradé*/
   &:hover {
     /* changement au passage de la souris*/
     background: linear-gradient($primaire, $secondaire);
     box-shadow: 5px 10px 7px rgb(161, 159, 159);
-    opacity: 0.8; /*eclaircissement btn*/
+    opacity: 0.6; /*eclaircissement btn*/
   }
 }
 /*---------------------------------------------------------------------------------------------------------*/
