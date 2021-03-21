@@ -241,6 +241,7 @@
   }
 .far{
   opacity: 0;
+  transition: $transition; /*effet heart qui se remplit*/
 }}
 }
 .new {

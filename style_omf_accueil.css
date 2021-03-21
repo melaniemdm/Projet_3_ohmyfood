@@ -483,6 +483,9 @@ footer {
 
 .icon_heart input:checked + label .far {
   opacity: 0;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  /*effet heart qui se remplit*/
 }
 
 .new {
