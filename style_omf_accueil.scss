@@ -2,8 +2,6 @@
 /* style commun a toutes les pages*/
 @import "./style_omf_commun.scss";
 
-
-
 /*---------------------------------------Varaibles------------------------------------------------------------------*/
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -25,7 +23,7 @@
   font-size: 16px;
   font-family: $omf_text_font;
   font-weight: bold;
-  
+
   .icon_map {
     font-size: 18px;
     margin-right: 17px;
@@ -140,7 +138,7 @@
     .icon_fonctionnement {
       color: $primaire;
     }
-    .text{
+    .text {
       color: #000;
     }
   }
@@ -216,33 +214,35 @@
   /*cliquable icon heart*/
   &:focus {
     display: block;
-   
   }
 }
 /*curseur pointer*/
 .icon_heart {
   cursor: pointer;
-  & input{           /*case à cocher*/
+  & input {
+    /*case à cocher*/
     display: none;
   }
-  & label{
+  & label {
     cursor: pointer;
   }
-  & input:checked + label{ /*coche du heart, label qui suit le input*/
-       .fas{
-    transition: $transition; /*temps de remplissage du coeur*/
-    font-size: $omf_font_size_heart;
-       background: -webkit-linear-gradient(
-      $primaire,
-      $secondaire
-    ); /*degradé icon heart*/
-    -webkit-background-clip: text; /* -webkit genere un warning mais est essentiel au fonctionnement du heart*/
-    color: transparent;
+  & input:checked + label {
+    /*coche du heart, label qui suit le input*/
+    .fas {
+      transition: $transition; /*temps de remplissage du coeur*/
+      font-size: $omf_font_size_heart;
+      background: -webkit-linear-gradient(
+        $primaire,
+        $secondaire
+      ); /*degradé icon heart*/
+      -webkit-background-clip: text; /* -webkit genere un warning mais est essentiel au fonctionnement du heart*/
+      color: transparent;
+    }
+    .far {
+      opacity: 0;
+      transition: $transition; /*effet heart qui se remplit*/
+    }
   }
-.far{
-  opacity: 0;
-  transition: $transition; /*effet heart qui se remplit*/
-}}
 }
 .new {
   border-radius: 2px;
@@ -287,7 +287,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  animation: tourne $transition_loading;  /* mis a 3s comme demandé dans le brief - trop rapide à 0.5s */
+  animation: tourne $transition_loading; /* mis a 3s comme demandé dans le brief - trop rapide à 0.5s */
 }
 /* animation loader*/
 @keyframes tourne {
@@ -299,10 +299,12 @@
   }
   100% {
     opacity: 0; /*fait disparaitre le loader*/
-    transform: scale(0);/* Permet au btn de fonctionner en minimisant le loader*/
+    transform: scale(
+      0
+    ); /* Permet au btn de fonctionner en minimisant le loader*/
   }
-    }
-.loading_container{
+}
+.loading_container {
   width: 100%;
   height: 100%;
   background: $background_gradient;
@@ -311,7 +313,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  animation: disparait $transition_loading;   /* mis a 3s comme demandé dans le brief */
+  animation: disparait $transition_loading; /* mis a 3s comme demandé dans le brief */
 }
 /* animation pour accompagner le loader*/
 @keyframes disparait {
@@ -324,6 +326,8 @@
   }
   100% {
     opacity: 0; /*fait disparaitre avec le loader*/
-    transform: scale(0);/* Permet au btn de fonctionner en minimisant le loader*/
+    transform: scale(
+      0
+    ); /* Permet au btn de fonctionner en minimisant le loader*/
   }
-    }
+}

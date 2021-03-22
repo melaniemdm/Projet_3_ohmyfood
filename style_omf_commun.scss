@@ -21,17 +21,18 @@ $background-color-grey: #f6f5f5;
 $secondaire: #ff79da;
 $primaire: #9353dc;
 $tertiaire: #99e2d0;
-$color_heart_open:#000;
+$color_heart_open: #000;
 $transition: 0.4s linear;
-$background_gradient:linear-gradient($secondaire, $primaire);
+$background_gradient: linear-gradient($secondaire, $primaire);
 $transition_loading: 3s forwards;
 
-body {   /*police du body*/
+body {
+  /*police du body*/
   width: auto;
-  font-family: $omf_text_font, $omf_font_default ;
+  font-family: $omf_text_font, $omf_font_default;
 }
 
-%heart_style{
+%heart_style {
   font-size: $omf_font_size_heart;
   color: $color_heart_open;
   font-weight: lighter;
@@ -57,19 +58,19 @@ $omf_background-image_delice: url("./images/restaurants/louis-hansel-shotsofloui
 }
 /*Extension du placeholder photo_accueil_taille */
 .photo_gout {
- background-image: $omf_background-image_gout; /*url de la photo*/
+  background-image: $omf_background-image_gout; /*url de la photo*/
   @extend %photo_accueil_taille; /*placeholder*/
 }
 .photo_enchante {
- background-image: $omf_background-image_enchante;
+  background-image: $omf_background-image_enchante;
   @extend %photo_accueil_taille;
 }
 .photo_ala_fr {
- background-image: $omf_background-image_francaise;
+  background-image: $omf_background-image_francaise;
   @extend %photo_accueil_taille;
 }
 .photo_delice_sens {
-background-image: $omf_background-image_delice;
+  background-image: $omf_background-image_delice;
   @extend %photo_accueil_taille;
 }
 /* style des boutons*/
@@ -134,7 +135,7 @@ footer {
   /* pas un logo mais utilisation de la police shrikhand sur le texte pour recréer le logo  */
   padding-top: 15px;
   padding-bottom: 20px;
-  font-family: $omf_title_font; 
+  font-family: $omf_title_font;
   font-size: 17px;
   color: #fff;
 }

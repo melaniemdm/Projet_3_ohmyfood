@@ -2,7 +2,6 @@
 /* style commun a toutes les pages*/
 @import "./style_omf_commun.scss";
 
-
 /* positionnement de la flèche*/
 .fleche i {
   padding-top: 25px;
@@ -70,8 +69,7 @@ h4 {
   position: absolute;
   right: 50px;
   margin-top: 10px;
-   }
-
+}
 
 .cards_menu {
   background-color: $background-color-grey;
@@ -125,11 +123,12 @@ h4 {
   overflow: hidden; /*masque les elements qui sortent du div .card_menu */
   animation: apparait $transition forwards; /*déclenchement de l'animation apparait*/
   opacity: 0;
-  @for $num from 1 through 4 {     // boucle pour animation delay des 4 card
+  @for $num from 1 through 4 {
+    // boucle pour animation delay des 4 card
     &#{$num} {
-        animation-delay: 300ms* $num;
+      animation-delay: 300ms * $num;
     }
-}
+  }
 }
 @media #{$medium-up} {
   .card_menu {
@@ -143,9 +142,9 @@ h4 {
   height: 67px;
   width: 60px;
   right: 0;
- border-radius: 0px 10px 10px 0px;
- transform: translateX(60px);
- @include centrer;
+  border-radius: 0px 10px 10px 0px;
+  transform: translateX(60px);
+  @include centrer;
   transition: $transition;
 }
 /*animation du carré au hover sur card_menu*/
@@ -166,26 +165,24 @@ h4 {
   transition: $transition;
 }
 
-
 .check_circle {
   color: white;
   position: absolute;
   font-size: 20px;
-  
-  }
+}
 /*création du cercle pour l'animation*/
-@keyframes tourne{
-  0%{
+@keyframes tourne {
+  0% {
     transform: rotate(-360deg);
   }
-    100%{
+  100% {
     transform: rotate(0);
   }
 }
 /*animation rotation du cercle au hover*/
 .card_menu:hover .check_circle {
   animation: tourne $transition;
-    }
+}
 /*vue divers ecran*/
 
 .titre_entree {
@@ -204,13 +201,12 @@ h4 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; /*disparition du texte et points de suspentions*/
-  }
-  .card_menu:hover .detail_entree{
-margin-right: -60px;
-text-overflow: ellipsis; /*disparition du texte et points de suspentions*/
-transition: $transition;
-  }
-
+}
+.card_menu:hover .detail_entree {
+  margin-right: -60px;
+  text-overflow: ellipsis; /*disparition du texte et points de suspentions*/
+  transition: $transition;
+}
 
 .commander {
   background-color: $background-color-grey;
