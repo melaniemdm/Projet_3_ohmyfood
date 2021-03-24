@@ -492,6 +492,7 @@ h4 {
 
 /*vue divers ecran*/
 .titre_entree {
+  width: calc(100% - 60px);
   font-size: 19px;
   grid-column: 1 / span2;
   padding-top: 10px;
@@ -500,6 +501,14 @@ h4 {
   text-overflow: ellipsis;
   /*disparition du texte et points de suspensions*/
   white-space: nowrap;
+}
+
+.card_menu:hover .titre_entree {
+  width: calc(100% - 120px);
+  text-overflow: ellipsis;
+  /*disparition du texte et points de suspentions*/
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 .detail_entree {

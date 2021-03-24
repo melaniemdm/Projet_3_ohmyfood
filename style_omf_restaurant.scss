@@ -182,6 +182,7 @@ h4 {
 /*vue divers ecran*/
 
 .titre_entree {
+  width: calc(100% - 60px);
   font-size: 19px;
   grid-column: 1 / span2;
   padding-top: 10px;
@@ -190,6 +191,12 @@ h4 {
   text-overflow: ellipsis; /*disparition du texte et points de suspensions*/
   white-space: nowrap;
 }
+.card_menu:hover .titre_entree {
+  width: calc(100% - 120px);  // fonction qui calcul la taille 100% - une taille definie
+  text-overflow: ellipsis; /*disparition du texte et points de suspentions*/
+  transition: $transition;
+}
+
 
 .detail_entree {
   width: 100%;
