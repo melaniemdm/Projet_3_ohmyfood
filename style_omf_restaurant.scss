@@ -63,14 +63,10 @@ h4 {
   text-decoration: none;
   font-weight: normal;
 }
-/* Heart dans la carte du restaurant*/
-.heart_open_resto {
-  @extend %heart_style; /* placeholder heart vide dans commun*/
-  position: absolute;
-  right: 50px;
-  margin-top: 10px;
+.icon_heart_resto{     // coeur cliquable ds page resto
+  @extend .icon_heart;
+  padding-right:20px;
 }
-
 .cards_menu {
   background-color: $background-color-grey;
   min-height: 330px;

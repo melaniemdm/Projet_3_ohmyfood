@@ -25,10 +25,61 @@ body {
   font-family: roboto, Arial, "sans-sherif";
 }
 
-.heart_open_resto {
+.heart_open {
   font-size: 25px;
   color: #000;
   font-weight: lighter;
+}
+
+/*placeholder - style du coeur vide*/
+.heart_open {
+  /* heart_style dans commun*/
+}
+
+.heart_close {
+  color: transparent;
+  /*cliquable icon heart*/
+}
+
+.heart_close:focus {
+  display: block;
+}
+
+/*curseur pointer*/
+.icon_heart, .icon_heart_resto {
+  cursor: pointer;
+}
+
+.icon_heart input, .icon_heart_resto input {
+  /*case à cocher*/
+  display: none;
+}
+
+.icon_heart label, .icon_heart_resto label {
+  cursor: pointer;
+}
+
+.icon_heart input:checked + label, .icon_heart_resto input:checked + label {
+  /*coche du heart, label qui suit le input*/
+}
+
+.icon_heart input:checked + label .fas, .icon_heart_resto input:checked + label .fas {
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  /*temps de remplissage du coeur*/
+  font-size: 25px;
+  background: -webkit-linear-gradient(#9353dc, #ff79da);
+  /*degradé icon heart*/
+  -webkit-background-clip: text;
+  /* -webkit genere un warning mais est essentiel au fonctionnement du heart*/
+  color: transparent;
+}
+
+.icon_heart input:checked + label .far, .icon_heart_resto input:checked + label .far {
+  opacity: 0;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  /*effet heart qui se remplit*/
 }
 
 /* Variables photos*/
@@ -244,12 +295,8 @@ h4 {
   font-weight: normal;
 }
 
-/* Heart dans la carte du restaurant*/
-.heart_open_resto {
-  /* placeholder heart vide dans commun*/
-  position: absolute;
-  right: 50px;
-  margin-top: 10px;
+.icon_heart_resto {
+  padding-right: 20px;
 }
 
 .cards_menu {

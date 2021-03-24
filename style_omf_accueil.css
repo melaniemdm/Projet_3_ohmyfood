@@ -31,6 +31,57 @@ body {
   font-weight: lighter;
 }
 
+/*placeholder - style du coeur vide*/
+.heart_open {
+  /* heart_style dans commun*/
+}
+
+.heart_close {
+  color: transparent;
+  /*cliquable icon heart*/
+}
+
+.heart_close:focus {
+  display: block;
+}
+
+/*curseur pointer*/
+.icon_heart {
+  cursor: pointer;
+}
+
+.icon_heart input {
+  /*case à cocher*/
+  display: none;
+}
+
+.icon_heart label {
+  cursor: pointer;
+}
+
+.icon_heart input:checked + label {
+  /*coche du heart, label qui suit le input*/
+}
+
+.icon_heart input:checked + label .fas {
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  /*temps de remplissage du coeur*/
+  font-size: 25px;
+  background: -webkit-linear-gradient(#9353dc, #ff79da);
+  /*degradé icon heart*/
+  -webkit-background-clip: text;
+  /* -webkit genere un warning mais est essentiel au fonctionnement du heart*/
+  color: transparent;
+}
+
+.icon_heart input:checked + label .far {
+  opacity: 0;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  /*effet heart qui se remplit*/
+}
+
 /* Variables photos*/
 /* Pour centrer les elements*/
 /* placeholder pour déclarer la taille et position des photos d'accueil*/
@@ -435,57 +486,6 @@ footer {
 .restaurant_detail a {
   text-decoration: none;
   color: black;
-}
-
-/*placeholder - style du coeur vide*/
-.heart_open {
-  /* heart_style dans commun*/
-}
-
-.heart_close {
-  color: transparent;
-  /*cliquable icon heart*/
-}
-
-.heart_close:focus {
-  display: block;
-}
-
-/*curseur pointer*/
-.icon_heart {
-  cursor: pointer;
-}
-
-.icon_heart input {
-  /*case à cocher*/
-  display: none;
-}
-
-.icon_heart label {
-  cursor: pointer;
-}
-
-.icon_heart input:checked + label {
-  /*coche du heart, label qui suit le input*/
-}
-
-.icon_heart input:checked + label .fas {
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
-  /*temps de remplissage du coeur*/
-  font-size: 25px;
-  background: -webkit-linear-gradient(#9353dc, #ff79da);
-  /*degradé icon heart*/
-  -webkit-background-clip: text;
-  /* -webkit genere un warning mais est essentiel au fonctionnement du heart*/
-  color: transparent;
-}
-
-.icon_heart input:checked + label .far {
-  opacity: 0;
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
-  /*effet heart qui se remplit*/
 }
 
 .new {

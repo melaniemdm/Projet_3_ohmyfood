@@ -38,7 +38,17 @@
             <div class="nom_restaurant">
                 <h4> A la française </h4>
             </div>
-            <span class="heart_open_resto"><i class="far fa-heart fa-stack-1x "></i></span>
+            <div class="icon_heart_resto">
+                <input type="checkbox" id="heart" name="heart">
+                <!--case heart à cocher-->
+                <label for="heart">
+                    <span class="fa-stack fa">
+                        <!--superposition des icones-->
+                        <span class="heart_open"><i class="far fa-heart fa-stack-1x"></i></span>
+                        <!--utilisation d'un lien vide js pour mettre le heart en cliquable-->
+                        <span class="heart_close"><i class="fas fa-heart fa-stack-1x"></i></span>
+                    </span>
+            </label></div>
         </div>
     </section>
     <div class="menu">
